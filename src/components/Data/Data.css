@@ -1,0 +1,250 @@
+.Data {
+    overflow: hidden;
+    height: 90vh;
+    position: relative;
+    padding-top: 10vh;
+    display: flex;
+}
+
+.Data.GreenBG {
+    background: #00ff00;
+}
+
+.Data.BlueBG {
+    background: #0000ff;
+}
+
+.Data.BrainsBG {
+    background: url('../../media/Data/gif2.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Data.TeamBG {
+    background: url('../../media/Data/DATA5-popup.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Data .leftContainer {
+    width: 45%;
+    z-index: 1;
+}
+
+.Data .rightContainer {
+    width: 50%;
+}
+
+.Data h1 {
+    font-family: 'gt_america_monothin', sans-serif;
+    color: white;
+    font-size: 15rem;
+    margin: 0;
+    padding-top: 5vh;
+}
+
+li {
+    list-style: none;
+}
+
+.Data .linksContainer {
+    display: flex;
+}
+
+.Data ul {
+    color: white;
+    font-family: 'gt_america_monoregular', sans-serif;
+    font-size: 2.6rem;
+    text-align: left;
+}
+
+.Data ul li:hover,
+.Data ul li.active {
+    transform: translateX(2rem);
+    cursor: pointer;
+}
+
+.Data ul li#darkMode {
+    margin-top: 6rem;
+}
+
+.Data .numeration {
+    padding-right: 2rem;
+}
+
+.DataIntro {
+    border: 1px solid white;
+    position: relative;
+    height: 75vh;
+    width: 75%;
+    color: white;
+}
+
+.DataIntro p {
+    position: absolute;
+    width: 60%;
+    text-align: left;
+    left: 50%;
+    margin-left: -18rem;
+    top: 25%;
+}
+
+.DataOne {
+    position: relative;
+    height: 75vh;
+    width: 90%;
+    color: white;
+}
+
+.DataOne p {
+    position: absolute;
+    width: 60%;
+    text-align: left;
+    left: 50%;
+    margin-left: -18rem;
+    top: 25%;
+}
+
+.item {
+    position: absolute;
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 20rem;
+    border: 2px dashed white;
+}
+
+.closeLink {
+    height: 0;
+    width: 100%;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.closeLink:before {
+    content: '[ X ]';
+    color: white;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    z-index: 10;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'DOS', sans-serif;
+}
+
+.item.itemOne {
+    top: 30vh;
+    right: 22vw;
+}
+
+.item.itemTwo {
+    right: 10vw;
+    bottom: 17vh;
+}
+
+.item.itemThree {
+    top: 20vh;
+    right: 20vw;
+}
+
+.item.itemFour {
+    left: 10vw;
+    top: 4vh;
+}
+
+.item.itemFive {
+    left: 34vw;
+    bottom: 35vh;
+}
+
+.item.itemSix {
+    left: 40%;
+    max-width: 32rem;
+    bottom: 10vh;
+}
+
+.item.itemSeven {
+    top: 3vh;
+}
+
+.item.hidden {
+    display: none;
+}
+
+.DataTwo {
+    text-align: left;
+    color: #0000ff;
+}
+
+.DataThree {
+    margin-top: 2rem;
+}
+
+.DataThree p {
+    margin: -1rem 0;
+    font-weight: bold;
+    transition: all 0.2s;
+    color: white;
+    height: 100%;
+}
+
+.DataThree p:hover {
+    padding: 3rem 0;
+}
+
+.DataFive {
+    background: url('../../media/Data/DATA5-popup.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    position: absolute;
+    left: 32vw;
+    width: 60vw;
+    height: 70vh;
+    top: 17vh;
+    display: flex;
+    text-align: left;
+}
+
+.DataFive p {
+    padding-left: 47%;
+    padding-right: 8%;
+    padding-top: 10%;
+    font-family: 'gt_america_monoregular', sans-serif;
+}
+
+.teamImage {
+    background: url('../../media/Data/team.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    border: 2px dashed white;
+    right: 6vw;
+    top: 13vh;
+}
+
+.teamText {
+    background: #0000ff;
+    color: white;
+    position: absolute;
+    left: 31vw;
+    width: 18rem;
+    padding-right: 5rem;
+    padding-left: 2rem;
+    text-align: left;
+    top: 26vh;
+    z-index: 2;
+}

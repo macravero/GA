@@ -1,0 +1,60 @@
+.Home {
+  background: #06070b;
+  color: white;
+  height: 90vh;
+  margin-top: 10vh;
+  position: relative;
+}
+.Square {
+  position: absolute;
+  background: #de6199;
+  width: 53rem;
+  height: 18rem;
+  left: 50%;
+  margin-left: -27rem;
+  top: 14rem;
+}
+img.Lascano {
+  position: absolute;
+  left: 50%;
+  height: 38rem;
+  top: 4rem;
+  margin-left: -20.4rem;
+}
+img.SquareOne {
+  position: absolute;
+  left: 63.7%;
+  width: 8.5rem;
+  height: auto;
+  top: 46%;
+}
+img.SquareTwo {
+  position: absolute;
+  left: 23%;
+  top: 29%;
+  width: 8rem;
+}
+img.SquareThree {
+  position: absolute;
+  left: 33%;
+  width: 8.7rem;
+  top: 12%;
+}
+img.SquareFour {
+  position: absolute;
+  left: 35%;
+  width: 5.2rem;
+  top: 41%;
+}
+img.SquareFive {
+  position: absolute;
+  width: 8.5rem;
+  top: 60%;
+  left: 43%;
+}
+img.SquareSix {
+  position: absolute;
+  width: 14rem;
+  right: 37.5%;
+  top: 16%;
+}

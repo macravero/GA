@@ -1,0 +1,49 @@
+.bg0 {
+  background: url('../../media/intro/gif1.gif');
+}
+.bg1 {
+  background: url('../../media/intro/gif2.gif');
+}
+.bg2 {
+  background: url('../../media/intro/gif3.gif');
+}
+.bg3 {
+  background: url('../../media/intro/gif4.gif');
+}
+.bg4 {
+  animation-duration: 0.3s;
+  animation-name: changebg;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clicked0 {
+  background: url('../../media/intro/img1.jpg');
+}
+.clicked1 {
+  background: url('../../media/intro/img2.jpg');
+}
+.clicked2 {
+  background: url('../../media/intro/img3.jpg');
+}
+
+.Intro {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Animation */
+@keyframes changebg {
+  from {
+    background-image: url('../../media/intro/img4.jpg');
+  }
+
+  to {
+    background-color: black;
+  }
+}
