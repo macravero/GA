@@ -8,6 +8,7 @@ import img06 from '../../media/Data/06.jpg'
 import img07 from '../../media/Data/07.jpg'
 import './Data.css'
 import Critics from '../Critics/Critics'
+import Backend from '../Backend/Backend'
 function Data() {
   const [dataSelected, SetDataSelected] = useState(0)
 
@@ -73,6 +74,8 @@ function Data() {
           return <div className='DataSix'><div className='teamText'><p>Dirección Federico Pintos Programación Pablo Riera & Mathias Gatti Sonido Hernán Kerlleñevich Video Javier Plano & Mateo Amaral Producción & Montaje de obra Julián Urman & Kevin Herzog Iluminación Leonardo Val Diseño Ian Kornfeld Asistente Eliana Rosales<br/>Se estrenó como acto central del MICA (Mercado de Industrias Creativas Argentinas) en el C3, Centro Cultural de la Ciencia.</p></div>
           <div className='teamImage'/>
           </div>
+        case 7:
+          return <Backend></Backend>
     }
   }
   const setDataBackground = () => {
@@ -87,6 +90,8 @@ function Data() {
         return 'Data BrainsBG'
       case 6:
         return 'Data TeamBG'
+      case 7:
+        return 'Data BlueBG'
     }
   }
   return (

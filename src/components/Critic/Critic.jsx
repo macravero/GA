@@ -60,7 +60,7 @@ const Critic = ({removeCritics, title, content, author, link, posY, posX, id}) =
     return (
         <CriticContainer posY={posY} posX={posX}>
             <Wrapper>
-            <Header> <span>{title}</span><span>{link !== "" ? <span><a href={link} target="_blank">&#8599;</a></span> : null } <span onClick={() => removeCritics(id)} >[ x ]</span></span></Header>
+            <Header> <span>{title}</span><span>{link !== "" ? <span><a href={link} rel="noopener noreferrer" target="_blank">&#8599;</a></span> : null } <span onClick={() => removeCritics(id)} >[ x ]</span></span></Header>
             <Content>{content}</Content>
             <Author>{author}</Author>
             </Wrapper>
