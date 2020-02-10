@@ -9,6 +9,8 @@ import img07 from '../../media/Data/07.jpg'
 import './Data.css'
 import Critics from '../Critics/Critics'
 import Backend from '../Backend/Backend'
+import Endgame from '../Endgame/Endgame'
+
 function Data() {
   const [dataSelected, SetDataSelected] = useState(0)
 
@@ -71,11 +73,13 @@ function Data() {
         case 5:
           return <div className='DataFive'><p><strong>_El Brain’s Cut</strong> de Generación Artificial es una experiencia audiovisual única que explora el contacto entre cine, neurociencia, música experimental, performance y VJing.<br/><br/>  Se estrenó en Octubre del 2017 en el C3 (Centro Cultural de la Ciencia) en el marco del MICA (Mercado de Industrias Creativas Argentinas)<br/><br/>Una creación Kerlleñevich, Riera & Pintos</p></div>
         case 6:
-          return <div className='DataSix'><div className='teamText'><p>Dirección Federico Pintos Programación Pablo Riera & Mathias Gatti Sonido Hernán Kerlleñevich Video Javier Plano & Mateo Amaral Producción & Montaje de obra Julián Urman & Kevin Herzog Iluminación Leonardo Val Diseño Ian Kornfeld Asistente Eliana Rosales<br/>Se estrenó como acto central del MICA (Mercado de Industrias Creativas Argentinas) en el C3, Centro Cultural de la Ciencia.</p></div>
+          return <div className='DataSix'><div className='teamText'><p>Dirección: Federico Pintos<br/> Programación: Pablo Riera & Mathias Gatti <br/>Sonido: Hernán Kerlleñevich <br/> Video: Javier Plano & Mateo Amaral <br/> Producción & Montaje de obra: Julián Urman & Kevin Herzog <br/> Iluminación: Leonardo Val <br/> Diseño: Ian Kornfeld <br/> Asistente: Eliana Rosales<br/> <br/>Se estrenó como acto central del MICA (Mercado de Industrias Creativas Argentinas) en el C3, Centro Cultural de la Ciencia.</p></div>
           <div className='teamImage'/>
           </div>
         case 7:
           return <Backend></Backend>
+        case 8:
+          return <Endgame></Endgame>
     }
   }
   const setDataBackground = () => {
