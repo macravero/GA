@@ -233,15 +233,73 @@
 .img78{
     background-image:url('../../media/Data/endgame/78.png')
 }
+.img79{
+    background-image:url('../../media/Data/endgame/79.png')
+}
+.img80{
+    background-image:url('../../media/Data/endgame/80.png')
+}
+.img81{
+    background-image:url('../../media/Data/endgame/81.png')
+}
+.img82{
+    background-image:url('../../media/Data/endgame/82.png')
+}
+.img83{
+    background-image:url('../../media/Data/endgame/83.png')
+}
+.img84{
+    background-image:url('../../media/Data/endgame/84.png')
+}
+.img85{
+    background-image:url('../../media/Data/endgame/85.png')
+}
+.img86{
+    background-image:url('../../media/Data/endgame/86.png')
+}
+.img87{
+    background-image:url('../../media/Data/endgame/87.png')
+}
+.img88{
+    background-image:url('../../media/Data/endgame/88.png')
+}
+.img89{
+    background-image:url('../../media/Data/endgame/89.png')
+}
+.img90{
+    background-image:url('../../media/Data/endgame/90.png')
+}
+.img91{
+    background-image:url('../../media/Data/endgame/91.png')
+}
+.img92{
+    background-image:url('../../media/Data/endgame/92.png')
+}
+.img93{
+    background-image:url('../../media/Data/endgame/93.png')
+}
+.img94{
+    background-image:url('../../media/Data/endgame/94.png')
+}
+.img95{
+    background-image:url('../../media/Data/endgame/95.png')
+}
+.img96{
+    background-image:url('../../media/Data/endgame/96.png')
+}
+.img97{
+    background-image:url('../../media/Data/endgame/97.png')
+}
 .EndgameContainer{
     position: absolute;
     width: 80%;
-    height: 50%;
+    height: 70%;
     left: 10%;
-    top: 25%;
-    background-size:contain;
+    top: 13%;
+    background-size:60%;
     background-color:black;
     background-repeat:no-repeat;
     background-position:center;
     z-index:50;
+    border: 1px solid white;
 }

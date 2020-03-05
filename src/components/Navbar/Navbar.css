@@ -1,13 +1,14 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   align-items: center;
   font-family: 'vcr_osd_monoregular', sans-serif;
+  padding: 0 5%;
 }
 .Navbar p {
   font-size: 1.6rem;
@@ -28,4 +29,7 @@
 .Navbar img:last-child {
   padding-right: 1.6rem;
   padding-left: 2rem;
+}
+.navbar-right{
+  display: flex;
 }

@@ -12,8 +12,8 @@ function Navbar(props) {
       <animated.p style={gaAnimation} className={props.fontColor} onClick={() => props.setPos(0)}>GA /</animated.p>
       <animated.p style={peliAnimation} className={props.fontColor} onClick={() => props.setPos(3)}>VER PELICULA</animated.p>
       <animated.div style={logoAnimation} className="navbar-right">
-        <img src={navbarIcon1} alt="" />
-        <img src={navbarIcon2} alt="" />
+        <p onClick={() => props.setPos(1)} style={props.pos == 3 ? { color: 'black'} : {color: 'white'}}>(2)</p>
+        <p onClick={() => props.setPos(2)} style={props.pos == 3 ? { color: 'black'} : {color: 'white'}}>(3)</p>
       </animated.div>
     </div>
   )

@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div className="App">
       {(counter < 5) && <Intro counter={counter} setCounter={setCounter} />}
-      {(counter >= 5) && <Navbar setPos={setPos} fontColor={fontColor} />}
+      {(counter >= 5) && <Navbar setPos={setPos} pos={pos} fontColor={fontColor} />}
       {(counter >= 5) && <View pos={pos} setPos={setPos} setFontColor={setFontColor} fontColor={fontColor} />}
       {(counter >= 5) && <Footer setPos={setPos} fontColor={fontColor} />}
     </div>

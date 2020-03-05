@@ -4,6 +4,7 @@
     position: relative;
     padding-top: 10vh;
     display: flex;
+    padding-left: 5%;
 }
 
 .Data.GreenBG {
@@ -78,17 +79,17 @@ li {
     border: 1px solid white;
     position: relative;
     height: 75vh;
-    width: 75%;
+    width: 100%;
     color: white;
 }
 
 .DataIntro p {
     position: absolute;
-    width: 60%;
+    width: 55%;
     text-align: left;
     left: 50%;
     margin-left: -18rem;
-    top: 25%;
+    top: 35%;
 }
 
 .DataOne {
@@ -183,10 +184,17 @@ li {
 .DataTwo {
     text-align: left;
     color: #0000ff;
+    font-family: 'gt_america_monothin',sans-serif;
+    padding-left: 20%;
+    padding-right: 25%;
+    padding-top: 5%;
+    font-size: 1.4rem
 }
 
 .DataThree {
-    margin-top: 2rem;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: left;
 }
 
 .DataThree p {

@@ -20,6 +20,7 @@ const BackendWrapper = styled.div`
     flex-direction:column;
     width:100%;
     height:100%;
+    padding-top:5%;
 `
 const BackendRow = styled.div`
     display:flex;
