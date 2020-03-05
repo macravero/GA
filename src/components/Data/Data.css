@@ -180,17 +180,6 @@ li {
 .item.hidden {
     display: none;
 }
-
-.DataTwo {
-    text-align: left;
-    color: #0000ff;
-    font-family: 'gt_america_monothin',sans-serif;
-    padding-left: 20%;
-    padding-right: 25%;
-    padding-top: 5%;
-    font-size: 1.4rem
-}
-
 .DataThree {
     margin-top: 10%;
     margin-left: 10%;

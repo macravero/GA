@@ -38,3 +38,10 @@ code {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'gt_america_expanded_light';
+  src: url('./fonts/gt-america-expanded-light.woff2') format('woff2'),
+    url('./fonts/gt-america-expanded-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

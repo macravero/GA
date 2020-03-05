@@ -12,7 +12,7 @@ function Brains() {
   // Element animations
   const fontAnimation = useSpring({ marginTop: -1200, from: { marginTop: 400 }, delay: 300, duration: 3000 })
   // const clickButtonAnimation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 9500 })
-  const backgroundAnimation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 9500 })
+  const backgroundAnimation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 12500 })
   const introAnimation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 300 })
   return (
     <div className="Brains">

@@ -7,6 +7,8 @@ import img05 from '../../media/Data/05.jpg'
 import img06 from '../../media/Data/06.jpg'
 import img07 from '../../media/Data/07.jpg'
 import './Data.css'
+import Credits from '../Credits/Credits'
+import CreditImages from '../Credits/CreditImages'
 import Critics from '../Critics/Critics'
 import Backend from '../Backend/Backend'
 import Endgame from '../Endgame/Endgame'
@@ -29,9 +31,7 @@ function Data() {
       case 1:
         return <div className='DataOne'><p><strong>_Generación Artificial</strong> es una mirada subjetiva sobre la historia de los Video Jockeys, con un énfasis nostálgico en la relación entre arte y tecnología. De la mano de un VJ pionero que busca hackear el cerebro, el director de esta película se interna en el laberinto de una discusión metafísica sobre los límites de la experimentación, el artista y su público, y la videorrealidad como futuro de la especie humana.<br /><br /><strong>_Generación Artificial</strong> utilizó para su realización: diapositivas, Super 8, 8 mm., VHS, SVHS, HI8, Mini DV, DV cam, HD, 2K, cámaras de seguridad y sintetizadores y mixers de video analógico.</p></div>
       case 2:
-        return <div className='DataTwo'><p><strong>Director:</strong> Federico Pintos<br /><strong>Guión:</strong> Julián Urman, Federico Pintos<br /><strong>Edición:</strong> Ian Kornfeld, Federico Pintos</p>
-          <p><strong>Intérpretes:</strong> Rafael Cippolini, Julián Urman, Lulú Jankilevich<br /> <strong>Visuales:</strong> Marcelo Rondinone, Alejandro Delgado, Bernie Heredia, Milena Pafundi, Sebastián Iannizzotto, José Render, Federico Lamas, Ian Kornfeld, DataRape, Interno Subjetivo.<br /> <strong>Canciones:</strong> Julián Aznar, Fantasías Animadas, Ulises Conti, Juan Stewart, Trasvorder, Zort, Emilio Haro/Wenchi Lazo<br /> <strong>Entrevistas:</strong> Marcelo Urresti, Mariano Sigman, Graciela Taquini, Iván Ivanoff.</p>
-          <p><strong>Dirección de fotografía y cámara:</strong> Leonardo val<br /><strong>Fotografías:</strong> Luis sens <br /><strong>Posproducción & Música original:</strong> Ian kornfeld<br /><strong>Dirección de sonido:</strong> Emiliano biaiñ <br /><strong>Arte:</strong> Marina Azul Fernández Besada<br /> <strong>Diseño de Títulos:</strong> Javier Plano<br /> <strong>Diseño gráﬁco:</strong> Ian Kornfeld<br /> <strong>Dirección de producción:</strong> Andy Piffer <br /><strong>Producción:</strong> Federico Pintos Julián Urman, Matías Tamborenea, Iván Granovsky, Martín Maisonave.</p></div>
+        return (<><Credits/><CreditImages/></>)
       case 3:
         return <div className='DataThree'><p className='proyeccion'>BAFICI</p>
           <p className='proyeccion'>MALBA (Museo de Arte Latinoamericano) Palais de Glace<br /></p>
