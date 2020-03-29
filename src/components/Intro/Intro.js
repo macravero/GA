@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import imagePreloader from '../shared/ImageLoader/imageLoader'
 import './Intro.css'
 function Intro(props) {
+  imagePreloader();
   const { counter, setCounter } = props
   const [isClicking, setClicking] = useState(false)
 

@@ -19,6 +19,7 @@ const ToggleHeaderButton = styled(animated.div)`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 `
 const BotWrapper = styled(animated.div)`
     position: absolute;
@@ -44,6 +45,7 @@ const Header = styled.div`
         padding-right: 3rem;
         font-size: 2rem;
         font-family: cursive;
+        cursor: pointer;
     }
 `
 const Wrapper = styled.div`
@@ -133,6 +135,7 @@ const ButtonWrapper = styled.div`
         font-family: monospace;
         font-weight: bold;
         font-size: 2.2rem;
+        cursor: pointer;
     }
 `
 

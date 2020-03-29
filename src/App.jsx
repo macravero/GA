@@ -9,7 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 
 
 const App = () => {
-  const [counter, setCounter] = useState(5)
+  const [counter, setCounter] = useState(0)
   const [pos, setPos] = useState(0)
   const [fontColor, setFontColor] = useState('white')
 

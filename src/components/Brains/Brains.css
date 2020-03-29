@@ -15,21 +15,21 @@
   padding-right:6%;
 }
 .Background {
-  background: url('../../media/Brains/finalBg2.png');
+  background: url('../../media/Brains/bg.png');
   position: absolute;
   width: 100%;
   height: 100vh;
   right: 0;
   top: 0;
-  background-size: cover;
-  background-position: 65% 50%;
+  background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
   transition: 3s all;
   background-attachment: fixed;
 }
 .Button {
-  height: 4.5rem;
-  width: 12.5rem;
+  height: 5.5rem;
+  width: 14.5rem;
   background: black;
   position: absolute;
   color: white;
@@ -46,17 +46,17 @@
   color: black;
 }
 .Click1 {
-  left: 16vw;
+  left: 14.5vw;
   top: 19vh;
 }
 .Click2 {
-  left: 16vw;
+  left: 14.5vw;
   top: 43vh;
 }
 .Click3 {
-  right: 15vw;
-  bottom: 46.6vh;
-  width: 13.3rem;
+  right: 13vw;
+  bottom: 41vh;
+  width: 14.8rem;
 }
 .gif1 {
   position: absolute;
