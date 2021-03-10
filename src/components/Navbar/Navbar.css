@@ -9,6 +9,7 @@
   align-items: center;
   font-family: 'vcr_osd_monoregular', sans-serif;
   padding: 0 5%;
+  transition: padding 2s;
 }
 .Navbar p {
   font-size: 1.6rem;
@@ -24,12 +25,21 @@
   padding-left: 3rem;
 }
 .Navbar p:nth-child(2) {
-  padding-left: 3rem;
-}
-.Navbar img:last-child {
-  padding-right: 1.6rem;
   padding-left: 2rem;
 }
+/* .Navbar img:last-child {
+  padding-right: 1.6rem;
+  padding-left: 2rem;
+} */
 .navbar-right{
   display: flex;
+}
+.Navbar img{
+  width: 2rem;
+}
+
+.Navbar a{
+  height: 100%;
+  align-self: center;
+  padding-left: 2rem;
 }

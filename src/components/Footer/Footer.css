@@ -6,6 +6,17 @@
   /* background: gray; */
   height: 7rem;
 }
+.Footer.Movie{
+  height: 10rem;
+  background:white;
+}
+.Footer.Movie.Hacked{
+  /* height: 10rem; */
+  background:black;
+}
+.Footer.Movie h1{
+  padding-top: 3rem;
+}
 .marquee {
   overflow: hidden;
   position: relative;
@@ -36,6 +47,12 @@
 }
 .Footer h1.secondMarquee {
   animation-delay: 10s;
+}
+.Footer:hover h1{
+  animation-duration: 40s;
+}
+.Footer:hover h1.secondMarquee{
+  animation-delay: 20s;
 }
 @-moz-keyframes marqueeTransition {
   0% {

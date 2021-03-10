@@ -36,7 +36,14 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.introPreloader{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
 /* Animation */
 @keyframes changebg {
   from {

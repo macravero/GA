@@ -15,7 +15,7 @@
   padding-right:6%;
 }
 .Background {
-  background: url('../../media/Brains/bg.png');
+  background: url('../../media/Brains/bg2.png');
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -54,9 +54,12 @@
   top: 43vh;
 }
 .Click3 {
-  right: 13vw;
+  right: 11vw;
   bottom: 41vh;
-  width: 14.8rem;
+}
+.Click4 {
+  left: 45.7vw;
+  top: 61vh;
 }
 .gif1 {
   position: absolute;
@@ -70,11 +73,15 @@
   background-position: center;
   display: flex;
   justify-content: right;
+  border: 2px dashed white;
 }
 .gif1 span {
   cursor: pointer;
   color: white;
   margin-right: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .gif2 {
   position: absolute;
@@ -88,11 +95,15 @@
   background-position: center;
   display: flex;
   justify-content: right;
+  border: 2px dashed white;
 }
 .gif2 span {
   cursor: pointer;
   color: white;
   margin-right: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .ficha {
   position: absolute;
@@ -108,9 +119,28 @@
   display: flex;
   justify-content: right;
 }
-.ficha span {
+.ficha-title span {
   cursor: pointer;
   color: white;
   margin-right: 0.5rem;
-  padding-left:3%;
+  padding-top: 1.3rem;
+  font-size: 3rem;
+}
+.ficha-title{
+  position: absolute;
+  top: 0;
+  color: white;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+  font-family: 'gt_america_monoregular',sans-serif;
+}
+.ficha-title h1{
+  font-size: 2rem;
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-bottom: .5rem;
 }

@@ -1,8 +1,9 @@
 import React, {useState,useEffect, useRef} from 'react'
 import { useSpring, animated } from 'react-spring'
 import styled from 'styled-components'
-import LascanoBot from '../../media/Home/bot-lascano.png'
-import QuestionMark from '../../media/Home/chat-question.png'
+import LascanoBot from '../../media/Bot/bot-lascano.png'
+import LascanoVideo from '../../media/Bot/lascano-video.webm'
+import QuestionMark from '../../media/Bot/chat-question.png'
 
 
 const ToggleHeaderButton = styled(animated.div)`
@@ -61,6 +62,7 @@ const LascanoPhoto = styled.div`
     grid-row: 2/3;
     background-image: url("${LascanoBot}");
     background-size: contain;
+    position: relative;
     `
 const Chat = styled.div`
     grid-column: 4/5;
@@ -142,46 +144,76 @@ const ButtonWrapper = styled.div`
 const Bot = () => {
     const [displayBot, setDisplayBot] = useState(false);
     const [messageCounter, setMessageCounter] = useState(0);
+    const [strokeCount, updateStrokeCount] = useState(0);
     const [message, updateMessage] = useState('');
-    const [messageList, updateMessageList] = useState([{user:"L45C4-N0",message:"Este sitio se puede hackear, queres saber como?"}])
-    const [user, setUser] = useState('You');
+    const [messageList, updateMessageList] = useState([{user:"L45C4-N0",message:"Ingrese nombre.."}])
+    const [user, setUser] = useState('UNKN0WN');
     useEffect(
         () => scrollToBottom,[messageCounter]
     );
+    useEffect(() => {
+        if (messageCounter == 2) pushMessage()
+    }, [messageCounter]);
+
     const scrollToBottom = () =>{
         messagesEndRef.current.scrollIntoView({ behaviour: 'smooth'})
     }
     const messagesEndRef = useRef(null);
+
+    const setUpdateMessage = ({target}) => {
+        if (messageCounter == 1 && strokeCount === 5){
+            setMessageCounter(2);
+            target.value = ''
+        }
+        updateMessage(target.value)
+    }
+
     const pushMessage = () =>{
-        if (message === '') return;
+        debugger;
         let newMessage = {user, message};
         let botMessage;
+        let listToPush
         switch(messageCounter){
             case 0:
-                botMessage = {user: 'L45C4-N0', message:'Perfecto. Cual es tu nombre?'}
-                break;
-            case 1:
+                if (message === '') return;
                 setUser(message);
                 newMessage.user = user;
-                botMessage = {user: 'L45C4-N0', message: `Bienvenido ${message}`};
+                botMessage = {user: 'L45C4-N0', message: `Bienvenido ${message}. Ingrese mail...`};
+                listToPush = [newMessage, botMessage] 
                 break;
+            case 2:
+                botMessage = {user: 'L45C4-N0', message: `No, mejor ingrese número de tarjeta de crédito, y adivinaremos qué tipo de tarjeta es…`};
+                listToPush = [botMessage];
+            default:
+                listToPush = botMessage ? [newMessage, botMessage] : [newMessage]
         }
-        let listToPush = botMessage ? [newMessage, botMessage] : [newMessage];
         updateMessageList([
             ...messageList,
             ...listToPush
         ])
         let flag = messageCounter + 1
         setMessageCounter(flag);
+        updateMessage('');
+        updateStrokeCount(0);
     }
-
+    const handleKeyPress = (e) => {
+        updateStrokeCount(prevState => prevState+1);
+        if(e.key === 'Enter'){
+          e.preventDefault() 
+          pushMessage();
+        }
+    }
     return (
         <div>
             <ToggleHeaderButton onClick={() => setDisplayBot(true)}>L45C4-N0</ToggleHeaderButton>
             {displayBot && (<BotWrapper>
                 <Header><span onClick={() => setDisplayBot(false)}>X</span></Header>
                 <Wrapper>
-                    <LascanoPhoto></LascanoPhoto>
+                    <LascanoPhoto>
+                    <video loop muted autoPlay poster={LascanoBot} style={{position:'absolute',top:'0',left:'0',width:'100%'}}>
+                        <source src={LascanoVideo} type="video/webm"/>
+                    </video>
+                    </LascanoPhoto>
                     <Chat>
                         <span>@L45C4-N0</span>
                         {messageList.map((messageItem, i) => (<span key={i}>@{messageItem.user}:<br/>>{messageItem.message}</span>))}
@@ -190,7 +222,7 @@ const Bot = () => {
                     <QuestionPhoto></QuestionPhoto>
                     <ChatInput>
                         <span>chat</span>
-                        <textarea type='text' value={message} onChange={({target})=> updateMessage(target.value)}/>
+                        <textarea type='text' value={message} onKeyPress={handleKeyPress} onChange={setUpdateMessage}/>
                         <ButtonWrapper><button onClick={pushMessage}>SEND</button></ButtonWrapper>
                         </ChatInput>
                 </Wrapper>

@@ -45,3 +45,10 @@ code {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'DOS';
+  src: url('./fonts/perfect_dos_vga_437_win-webfont.woff2') format('woff2'),
+       url('./fonts/perfect_dos_vga_437_win-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

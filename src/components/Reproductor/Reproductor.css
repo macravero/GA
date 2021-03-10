@@ -7,17 +7,27 @@
   background: white;
 }
 .Reproductor.ampliado {
-  background: black;
+  background: url('../../media/Reproductor/hackedbg.jpg');
 }
-.Reproductor.ampliado .critica p {
+.Reproductor.ampliado .critica p, .Reproductor.ampliado h2 {
   color: white;
+}
+.Reproductor.ampliado h2{
+  padding-right: 3rem;
 }
 .movieContainer {
   position: relative;
   padding-bottom: 34%; /* 16:9 */
   padding-top: 25;
   height: 0;
-  width: 65%;
+  width: 60%;
+  margin-left: 6vw;
+}
+.movieContainer.hacked{
+  animation: horizontalShuffle .05s linear infinite;
+}
+.movieContainer.ampliada{
+  width: 80%;
   margin-left: 3vw;
 }
 .movie {
@@ -28,13 +38,54 @@
   height: 100%;
 }
 .criticsContainer {
+  font-family: 'gt_america_monoregular', sans-serif;
   align-items: center;
+  position: relative;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
-  height: 70vh;
+  overflow-y: hidden;
+  height: 100%;
   width: 25%;
   margin-left: 5%;
+  margin-right:2%;
+}
+.firstMarquee, .secondMarquee{
+  height: 100%;
+  position: absolute;
+  -moz-transform: translateY(110%);
+  -webkit-transform: translateY(110%);
+  transform: translateY(110%);
+  -moz-animation: criticsTransition 20s linear infinite;
+  -webkit-animation: criticsTransition 20s linear infinite;
+  animation: criticsTransition 20s linear infinite;
+}
+.firstMarquee.hacked, .secondMarquee.hacked{
+  
+  -moz-animation: criticsTransition 2s linear infinite;
+  -webkit-animation: criticsTransition 2s linear infinite;
+  animation: criticsTransition 2s linear infinite;
+}
+.secondMarquee{
+  transform: translateY(200%);
+  animation-delay: 10s;
+}
+.secondMarquee.hacked{
+  animation-delay: 1s;
+}
+.firstMarquee.ampliada, .secondMarquee.ampliada{
+  
+  -moz-animation: criticsTransition 15s linear infinite;
+  -webkit-animation: criticsTransition 15s linear infinite;
+  animation: criticsTransition 15s linear infinite;
+}
+.secondMarquee.ampliada{
+  animation-delay: 7.5s;
+}
+
+.criticsContainer div{
+  text-align: center;
+  /* margin-left: 10%; */
+  margin: 3rem 0 3rem 5%;
 }
 .criticsContainer h2 {
   font-family: 'vcr_osd_monoregular', sans-serif;
@@ -49,19 +100,22 @@
   margin-bottom: 2rem;
   width: 80%;
 }
+.criticaImage{
+  max-width: 100%;
+}
 .critica p:last-child {
   color: #767676;
   padding: 0;
   margin: 0;
 }
 .hackButton {
+  font-family: 'DOS', sans-serif;
   position: absolute;
   color: white;
   background: red;
-  border-radius: 14px;
-  padding: 0.5rem 1rem;
-  bottom: 13vh;
-  left: 3vw;
+  padding: 1.5rem 2rem;
+  bottom: 16vh;
+  left: 6vw;
   font-weight: bold;
   cursor: pointer;
   animation: infiniteButton 1400ms infinite;
@@ -83,5 +137,45 @@
   to {
     background: red;
     transform: scale(1, 1);
+  }
+}
+@-moz-keyframes criticsTransition {
+  0% {
+    -moz-transform: translateY(110%);
+  }
+  100% {
+    -moz-transform: translateY(-110%);
+  }
+}
+@-webkit-keyframes criticsTransition {
+  0% {
+    -webkit-transform: translateY(110%);
+  }
+  100% {
+    -webkit-transform: translateY(-110%);
+  }
+}
+@keyframes criticsTransition {
+  0% {
+    -moz-transform: translateY(110%);
+    -webkit-transform: translateY(110%);
+    transform: translateY(110%);
+  }
+  100% {
+    -moz-transform: translateY(-110%);
+    -webkit-transform: translateY(-110%);
+    transform: translateY(-110%);
+  }
+}
+@keyframes horizontalShuffle {
+  0% {
+    width: 30%;
+    margin-left: 6vw;
+    margin-top:3vw;
+  }
+  100% {
+    width: 75%;
+    margin-left:3vw;
+    margin-top:0;
   }
 }

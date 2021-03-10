@@ -58,3 +58,9 @@ img.SquareSix {
   right: 37.5%;
   top: 16%;
 }
+.Home img.Logo {
+  position: absolute;
+  bottom: 5vw;
+  max-width: 200px;
+  right: 2rem;
+}

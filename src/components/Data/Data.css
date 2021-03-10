@@ -16,7 +16,7 @@
 }
 
 .Data.BrainsBG {
-    background: url('../../media/Data/gif2.gif');
+    background: url('../../media/Data/data5bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,6 +69,8 @@ li {
 
 .Data ul li#darkMode {
     margin-top: 6rem;
+    animation: infiniteDarkmodeButton 4000ms infinite;
+    transition: all 2s;
 }
 
 .Data .numeration {
@@ -90,6 +92,7 @@ li {
     left: 50%;
     margin-left: -18rem;
     top: 35%;
+    font-family: 'gt_america_monoregular', sans-serif;
 }
 
 .DataOne {
@@ -106,6 +109,7 @@ li {
     left: 50%;
     margin-left: -18rem;
     top: 25%;
+    font-family: 'gt_america_monoregular', sans-serif;
 }
 
 .item {
@@ -144,7 +148,7 @@ li {
 
 .item.itemOne {
     top: 30vh;
-    right: 22vw;
+    right: 37vw;
 }
 
 .item.itemTwo {
@@ -174,14 +178,15 @@ li {
 }
 
 .item.itemSeven {
-    top: 3vh;
+    top: 63vh;
+    left: 17vw;
 }
 
 .item.hidden {
     display: none;
 }
 .DataThree {
-    margin-top: 10%;
+    margin-top: 25%;
     margin-left: 10%;
     text-align: left;
 }
@@ -225,23 +230,212 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 50vw;
-    height: 50vh;
+    width: 34vw;
+    height: 36vh;
     position: absolute;
     border: 2px dashed white;
-    right: 6vw;
-    top: 13vh;
+    right: -4vw;
+    top: 37vh;
+}
+.teamImage .closeTeamImage{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    cursor: pointer;
 }
 
 .teamText {
     background: #0000ff;
     color: white;
     position: absolute;
-    left: 31vw;
+    left: 8vw;
     width: 18rem;
     padding-right: 5rem;
     padding-left: 2rem;
     text-align: left;
-    top: 26vh;
+    top: 7vh;
     z-index: 2;
 }
+.teamText p{
+    padding: 0;
+    font-size: 1.6rem;
+}
+.teamText span{
+    position: absolute;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+}
+
+@keyframes infiniteDarkmodeButton {
+    from {
+        color: white;
+    }
+    16.66% {
+        color: black;
+    }
+    33.33% {
+        color: red;
+    }
+    50% {
+        color: black;
+    }
+    66.66% {
+        color: #0000ff
+    }
+    83.33% {
+      color: black;
+    }
+    to {
+        color: white;
+    }
+  }
+
+  /* ESTOS SON LOS LINKS */
+  .javier {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    position: absolute;
+    top: 17vh;
+    left: 6vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .eliana {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    position: absolute;
+    top: 18.2vh;
+    left: 8.7vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .kevin {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    position: absolute;
+    top: 17vh;
+    left: 10.7vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .mathias {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    position: absolute;
+    top: 16vh;
+    left: 12.9vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .pablo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    position: absolute;
+    top: 17vh;
+    left: 14.7vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .leonardo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    position: absolute;
+    top: 16vh;
+    right: 16vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .mateo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    position: absolute;
+    top: 17vh;
+    right: 13vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .hernan {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    position: absolute;
+    top: 16.8vh;
+    right: 10.5vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .federico {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    position: absolute;
+    top: 16vh;
+    right: 7.7vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .julian {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    position: absolute;
+    top: 15vh;
+    right: 5.2vw;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .link:hover{
+      background:white;
+      cursor: pointer;
+  }
+
+  /* hacks */
+
+  .Data.PintosBg{
+      background: url('../../media/Brains/slider-gif3.gif') no-repeat;
+      background-size: cover;
+  }
+  .Data.LascanoBg{
+      background: url('../../media/Data/10.png') no-repeat;
+      background-size: cover;
+  }
+  .Data.clickMeCursor{
+      cursor: not-allowed;
+  }
+  .Data.flippedCursor{
+      cursor: all-scroll;
+  }
+  .Data.DOSfont h1{
+      font-family: 'DOS', sans-serif;
+  }
+  .Data.DOSfont ul{  
+      font-family: 'DOS', sans-serif;
+  }
+  .Data.GTfont h1{
+    font-family: 'Lobster', cursive;
+  }
+  .Data.GTfont ul{
+    font-family: 'Lobster', cursive;
+  }
+  .Data.BloodColor h1{
+      color: red;
+  }
+  .Data.BloodColor ul{
+      color:red;
+  }
+  .Data.DeadColor h1{
+      color: black;
+  }
+  .Data.DeadColor ul{
+      color:black;
+  }

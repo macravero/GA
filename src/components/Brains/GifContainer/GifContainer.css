@@ -1,5 +1,42 @@
-.gifContainer{
-    background:purple;
-    width:30rem;
-    height: 15rem;
+.gifContainer.textContainer{
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    left: 21.8vw;
+    top: 6.3vh;
+    width: 56.1vw;
+    border: 3px solid white;
+    border-bottom: 0;
+    background-color: black;
+}
+.gifContainer.title{
+    font-size: 1.5rem;
+}
+.gifContainer.title, .gifContainer span{
+    color: white;
+}
+.gifContainer span{
+    padding-right: 2vw;
+    align-self: center;
+    cursor: pointer;
+}
+.gifContainer span.disabled{
+    color: gray;
+    cursor: not-allowed;
+}
+.gifContainer .close{
+    color: white;
+    position: absolute;
+    right: 0;
+}
+.gifContainer.container{
+    width: 56vw;
+    height: 70vh;
+    position: absolute;
+    left: 21.9vw;
+    top: 11.5vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid white;
 }

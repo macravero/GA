@@ -1,19 +1,45 @@
-import React, { useState } from 'react'
-import img01 from '../../media/Data/01.png'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from 'react'
+import { useSpring, animated } from 'react-spring'
+import img01 from '../../media/Brains/blackhole.gif'
 import img02 from '../../media/Data/02.gif'
 import img03 from '../../media/Data/03.jpg'
 import img04 from '../../media/Data/04.jpg'
 import img05 from '../../media/Data/05.jpg'
 import img06 from '../../media/Data/06.jpg'
-import img07 from '../../media/Data/07.jpg'
+import img07 from '../../media/Data/07.gif'
 import './Data.css'
-import Credits from '../Credits/Credits'
-import CreditImages from '../Credits/CreditImages'
-import Critics from '../Critics/Critics'
-import Backend from '../Backend/Backend'
-import Endgame from '../Endgame/Endgame'
+import Credits from './Credits/Credits'
+import CreditImages from './Credits/CreditImages'
+import Critics from './Critics/Critics'
+import Backend from './Backend/Backend'
+import Endgame from './Endgame/Endgame'
+import Header from './Header/Header'
+import Darkmode from './Darkmode/Darkmode'
+import { useDataContext } from '../../context/DataContext/DataContext';
 
 function Data() {
+  
+  const buttonAnimation = useSpring({ opacity: 1, from: { opacity: 0 }, duration: 2000 })
+  const item1Animation = useSpring({ opacity: 1, from: { opacity: 0 }, duration: 200 })
+  const item2Animation = useSpring({ opacity: 1, from: { opacity: 0 }, duration: 500 })
+  const item3Animation = useSpring({ opacity: 1, from: { opacity: 0 }, duration: 800 })
+  const item4Animation = useSpring({ opacity: 1, from: { opacity: 0 }, duration: 1100 })
+  const item5Animation = useSpring({ opacity: 1, from: { opacity: 0 }, duration: 1400})
+  const item6Animation = useSpring({ opacity: 1, from: { opacity: 0 }, duration: 1700 })
+  const item7Animation = useSpring({ opacity: 1, from: { opacity: 0 }, duration: 2000 })
+  const { 
+    darkMode,
+    showDarkMode,
+    displayDarkMode,
+    setDisplayDarkMode,
+    isDarkMode,
+    setIsDarkMode,
+    fontColor,
+    fontFamily,
+    DMbackground,
+    cursor,} = useDataContext();
+
   const [dataSelected, SetDataSelected] = useState(0)
 
   const [hideItemOne, SetHideItemOne] = useState(false)
@@ -23,6 +49,17 @@ function Data() {
   const [hideItemFive, SetHideItemFive] = useState(false)
   const [hideItemSix, SetHideItemSix] = useState(false)
   const [hideItemSeven, SetHideItemSeven] = useState(false)
+  const [hideTeam, setHideTeam] = useState(false)
+  const [hideTeamImage, setHideTeamImage] = useState(false)
+  const activateDarkMode = () =>{
+    setDisplayDarkMode(true)
+    setIsDarkMode(true)
+  }    
+  useEffect(() => {
+    return () => {
+        setIsDarkMode(false)
+    }
+  }, [])
 
   const showDataItem = () => {
     switch (dataSelected) {
@@ -71,15 +108,26 @@ function Data() {
         case 4:
           return <Critics></Critics>
         case 5:
-          return <div className='DataFive'><p><strong>_El Brain’s Cut</strong> de Generación Artificial es una experiencia audiovisual única que explora el contacto entre cine, neurociencia, música experimental, performance y VJing.<br/><br/>  Se estrenó en Octubre del 2017 en el C3 (Centro Cultural de la Ciencia) en el marco del MICA (Mercado de Industrias Creativas Argentinas)<br/><br/>Una creación Kerlleñevich, Riera & Pintos</p></div>
-        case 6:
-          return <div className='DataSix'><div className='teamText'><p>Dirección: Federico Pintos<br/> Programación: Pablo Riera & Mathias Gatti <br/>Sonido: Hernán Kerlleñevich <br/> Video: Javier Plano & Mateo Amaral <br/> Producción & Montaje de obra: Julián Urman & Kevin Herzog <br/> Iluminación: Leonardo Val <br/> Diseño: Ian Kornfeld <br/> Asistente: Eliana Rosales<br/> <br/>Se estrenó como acto central del MICA (Mercado de Industrias Creativas Argentinas) en el C3, Centro Cultural de la Ciencia.</p></div>
-          <div className='teamImage'/>
+          return <div className='DataFive'><p><strong>_El Brain’s Cut</strong> de Generación Artificial es una experiencia audiovisual única que explora el contacto entre cine, neurociencia, música experimental, performance y VJing.<br/><br/>  Se estrenó en Octubre del 2017 en el C3 (Centro Cultural de la Ciencia) en el marco del MICA (Mercado de Industrias Creativas Argentinas)<br/><br/>Una creación Kerlleñevich, Riera & Pintos</p>
+          {!hideTeam && <div className='teamText'><p>Dirección: Federico Pintos<br/> Programación: Pablo Riera & Mathias Gatti <br/>Sonido: Hernán Kerlleñevich <br/> Video: Javier Plano & Mateo Amaral <br/> Producción & Montaje de obra: Julián Urman & Kevin Herzog <br/> Iluminación: Leonardo Val <br/> Diseño: Ian Kornfeld <br/> Asistente: Eliana Rosales<br/> <br/>Se estrenó como acto central del MICA (Mercado de Industrias Creativas Argentinas) en el C3, Centro Cultural de la Ciencia.</p><span onClick={()=> setHideTeam(true)}>[ x ]</span></div>}
+          {!hideTeamImage && <div className='teamImage'>
+            <span className='closeTeamImage' onClick={()=> setHideTeamImage(true)}>[ x ]</span>
+            <a href='https://www.instagram.com/javierplano_videonix/' target='_blank' rel='noopener noreferrer' title='Javier Plano'><span className='javier link'></span></a>
+            <a href='https://www.instagram.com/elianitable/' target='_blank' rel='noopener noreferrer' title='Eliana Rosales'><span className='eliana  link'></span></a>
+            <a href='https://www.instagram.com/kev.zog/' target='_blank' rel='noopener noreferrer' title='Kevin Herzog'><span className='kevin  link'></span></a>
+            <a href='https://www.instagram.com/mathigatti/' target='_blank' rel='noopener noreferrer' title='Mathias Gatti'><span className='mathias  link'></span></a>
+            <a href='https://www.instagram.com/rierayriase/' target='_blank' rel='noopener noreferrer' title='Pablo Riera'><span className='pablo  link'></span></a>
+            <a href='https://www.instagram.com/val.leonardo/' target='_blank' rel='noopener noreferrer' title='Leonardo Val'><span className='leonardo  link'></span></a>
+            <a href='https://www.instagram.com/mateoamaral/' target='_blank' rel='noopener noreferrer'title='Mateo Amaral'><span className='mateo  link'></span></a>
+            <a href='https://www.instagram.com/hernan.kerllenevich/' target='_blank' rel='noopener noreferrer' title='Hernán Kerlleñevich'><span className='hernan  link'></span></a>
+            <a href='https://www.instagram.com/rico_pintos/' target='_blank' rel='noopener noreferrer' title='Federico Pintos'><span className='federico  link'></span></a>
+            <a href='https://www.instagram.com/urmanjulian/' target='_blank' rel='noopener noreferrer' title='Julián Urman'><span className='julian  link'></span></a>
+          </div>}
           </div>
-        case 7:
+        case 6:
           return <Backend></Backend>
-        case 8:
-          return <Endgame></Endgame>
+        case 7:
+          return <Endgame showDarkMode={showDarkMode} isDarkMode={isDarkMode}></Endgame>
     }
   }
   const setDataBackground = () => {
@@ -93,13 +141,56 @@ function Data() {
       case 5:
         return 'Data BrainsBG'
       case 6:
-        return 'Data TeamBG'
-      case 7:
         return 'Data BlueBG'
     }
   }
+  const setHackedBg = () =>{
+    if (isDarkMode){
+    if (DMbackground === 'lascano'){
+      return 'LascanoBg'
+    }
+    if (DMbackground === 'pintos'){
+      return 'PintosBg'
+    }
+      return ''
+  }
+  };
+  const setHackedCursor = () =>{
+    if (isDarkMode){
+    if (cursor === 'clickme'){
+      return 'clickMeCursor'
+    }
+    if (cursor === 'flipped'){
+      return 'flippedCursor'
+    }
+      return ''
+  }
+  };
+  const setHackedFontFamily = () =>{
+    if (isDarkMode){
+      if (fontFamily === 'DOS'){
+        return 'DOSfont'
+      }
+      if (fontFamily ==='GT'){
+        return 'GTfont'
+      }
+  }
+    return;
+  }
+  const setHackedFontColor = () =>{
+    if (isDarkMode){
+      if (fontColor === 'blood'){
+        return 'BloodColor'
+      }
+      if (fontColor === 'dead'){
+        return 'DeadColor'
+      }
+      return;
+    }
+  }
   return (
-    <div className={setDataBackground()}>
+    <div className={`${setDataBackground()} ${setHackedCursor()} ${setHackedBg()} ${setHackedFontFamily()} ${setHackedFontColor()}`} >
+      <Header/>
       <div className="leftContainer">
         <h1 className="dataTitle">Data<sup>(3)</sup></h1>
         <div className="linksContainer">
@@ -108,13 +199,12 @@ function Data() {
             <li className={dataSelected === 2 && 'active'} onClick={() => SetDataSelected(2)}><span className="numeration">2</span>Créditos</li>
             <li className={dataSelected === 3 && 'active'} onClick={() => SetDataSelected(3)}><span className="numeration">3</span>Proyecciones</li>
             <li className={dataSelected === 4 && 'active'} onClick={() => SetDataSelected(4)}><span className="numeration">4</span>Criticas</li>
-            <li id="darkMode"><span className="numeration">0</span>Dark Mode</li>
+            {darkMode && <animated.li style={buttonAnimation} onClick={activateDarkMode} id="darkMode"><span className="numeration">0</span>Dark Mode</animated.li>}
           </ul>
           <ul>
             <li className={dataSelected === 5 && 'active'} onClick={() => SetDataSelected(5)}><span className="numeration">5</span>Brain's Cut</li>
             <li className={dataSelected === 6 && 'active'} onClick={() => SetDataSelected(6)}><span className="numeration">6</span>El Equipo</li>
-            <li className={dataSelected === 7 && 'active'} onClick={() => SetDataSelected(7)}><span className="numeration">7</span>Back-END</li>
-            <li className={dataSelected === 8 && 'active'} onClick={() => SetDataSelected(8)}><span className="numeration">8</span>Última Fase</li>
+            <li className={dataSelected === 7 && 'active'} onClick={() => SetDataSelected(7)}><span className="numeration">7</span>Última Fase</li>
           </ul>
         </div>
       </div>
@@ -122,37 +212,38 @@ function Data() {
         {showDataItem()}
         {dataSelected === 1 &&
           <div>
-            <div className={"item itemTwo " + (hideItemTwo && 'hidden')}>
+            <animated.div style={item1Animation} className={"item itemTwo " + (hideItemTwo && 'hidden')}>
               <div className="closeLink" onClick={() => SetHideItemTwo(true)}></div>
               <img src={img02} alt="Clouds" />
-            </div>
-            <div className={"item itemThree " + (hideItemThree && 'hidden')}>
+            </animated.div>
+            <animated.div style={item2Animation}  className={"item itemThree " + (hideItemThree && 'hidden')}>
               <div className="closeLink" onClick={() => SetHideItemThree(true)}></div>
               <img src={img03} alt="Thunder" />
-            </div>
-            <div className={"item itemFour " + (hideItemFour && 'hidden')}>
+            </animated.div>
+            <animated.div style={item3Animation}  className={"item itemFour " + (hideItemFour && 'hidden')}>
               <div className="closeLink" onClick={() => SetHideItemFour(true)}></div>
               <img src={img04} alt="Balloons" />
-            </div>
-            <div className={"item itemFive " + (hideItemFive && 'hidden')}>
+            </animated.div>
+            <animated.div style={item4Animation}  className={"item itemFive " + (hideItemFive && 'hidden')}>
               <div className="closeLink" onClick={() => SetHideItemFive(true)}></div>
               <img src={img05} alt="Palms" />
-            </div>
-            <div className={"item itemSix " + (hideItemSix && 'hidden')}>
+            </animated.div>
+            <animated.div style={item5Animation}  className={"item itemSix " + (hideItemSix && 'hidden')}>
               <div className="closeLink" onClick={() => SetHideItemSix(true)}></div>
               <img src={img06} alt="Sea Worlds" />
-            </div>
-            <div className={"item itemSeven " + (hideItemSeven && 'hidden')}>
+            </animated.div>
+            <animated.div style={item6Animation}  className={"item itemSeven " + (hideItemSeven && 'hidden')}>
               <div className="closeLink" onClick={() => SetHideItemSeven(true)}></div>
               <img src={img07} alt="Flower" />
-            </div>
-            <div className={"item itemOne " + (hideItemOne && 'hidden')}>
+            </animated.div>
+            <animated.div style={item7Animation}  className={"item itemOne " + (hideItemOne && 'hidden')}>
               <div className="closeLink" onClick={() => SetHideItemOne(true)}></div>
-              <img src={img01} />
-            </div>
+              <img src={img01} alt='Clouds'/>
+            </animated.div>
           </div>
         }
       </div>
+      {displayDarkMode && <Darkmode />}
     </div>
   )
 }

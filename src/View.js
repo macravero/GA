@@ -3,29 +3,34 @@ import Home from './components/Home/Home'
 import Brains from './components/Brains/Brains'
 import Data from './components/Data/Data'
 import Reproductor from './components/Reproductor/Reproductor'
+import {useViewsContext} from './context/ViewsContext/ViewsContext'
+import DataProvider from './context/DataContext/DataContext';
+
 const View = props => {
-  const { pos } = props
+  const { pos, setFontColor, homeVisited, setHomeVisited } = useViewsContext();
   const updateView = pos => {
     switch (pos) {
       case 0:
-        props.setFontColor('white')
-        return <Home></Home>
+        setFontColor('white')
+        return <Home visited={homeVisited} setVisited={setHomeVisited}></Home>
       case 1:
-        props.setFontColor('white')
+        setFontColor('white')
         return <Brains></Brains>
       case 2:
-        props.setFontColor('white')
+        setFontColor('white')
         return <Data></Data>
       case 3:
-        return <Reproductor setFontColor={props.setFontColor}></Reproductor>
+        return <Reproductor></Reproductor>
       default:
         return <div className="View" ><div>Something broke...</div></div>
     }
   }
   return (
-    <div className="View">
-      {updateView(pos)}
-    </div>
+    <DataProvider>
+      <div className="View">
+        {updateView(pos)}
+      </div>
+    </DataProvider>
   )
 }
 

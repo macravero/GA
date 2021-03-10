@@ -1,0 +1,107 @@
+.container{
+  position: absolute;
+  right: 0;
+  top: 1.8rem;
+  color: white;
+  text-align: left;
+  background: black;
+  z-index: 500;
+  border: 1px solid white;
+  border-right-color: white;
+  border-right-style: solid;
+  border-right-width: 1px;
+  height: calc(100% - 2rem);
+  border-right: none;
+  margin-left: 2rem;
+  display: block;
+  font-family: 'gt_america_monoregular', sans-serif;
+}
+.content{
+  padding-right: 3rem;
+  width: 100%;
+}
+.header{
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: .5rem;
+  
+}
+.error{
+  display: block;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  text-decoration: line-through red;
+  font-style: italic;
+}
+.cross{
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.title{
+  margin: 0;
+  margin-top: 1rem;
+  border: 1px solid white;
+  padding: .5rem 1rem;
+  box-sizing: border-box;
+  border-right: none;
+}
+.content__header{
+  display: flex;
+  border: 1px solid white;
+  border-right: none;
+  box-sizing: border-box;
+}
+.content__header__filter{
+  display: block;
+  width: 70%;
+  background: white;
+  color: black;
+  padding: 0.7rem;
+  margin-left: 1rem;
+}
+.content__header__hov{
+  padding-left: 3rem;
+  align-self: center;
+}
+.content__header__cls{
+  margin-left: 2rem;
+  align-self: center;
+  padding-right: 2rem;
+}
+.content__title{
+  margin: .5rem 0;
+  color: darkgray;
+  font-family: 'gt_america_monoregular', sans-serif;
+  padding-left: 1rem;
+}
+ul.content__list{
+  margin: 0;
+  font-size: 1.4rem;
+  padding-left: 3rem;
+  font-weight: bold;
+  font-family: 'gt_america_monothin', sans-serif!important;
+}
+ul.content__list li{
+  text-decoration: line-through;
+  color:darkslategray;
+  font-style:italic;
+}
+ul.content__list li.active{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}
+.subtitle{
+  font-weight: bold;
+  color: red;
+}
+.footer{
+  color: darkgray;
+  font-family: 'gt_america_monoregular', sans-serif;
+  padding-left: 1rem;
+}

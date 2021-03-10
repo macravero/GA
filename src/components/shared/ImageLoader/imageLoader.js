@@ -1,22 +1,20 @@
-import intro1 from '../../../media/intro/img1.jpg'
-import intro2 from '../../../media/intro/img2.jpg'
-import intro3 from '../../../media/intro/img3.jpg'
-import intro4 from '../../../media/intro/gif1.gif'
-import intro5 from '../../../media/intro/gif2.gif'
-import intro6 from '../../../media/intro/gif3.gif'
-import intro7 from '../../../media/intro/gif4.gif'
 import brains1 from '../../../media/Brains/bg.png'
 import brains2 from '../../../media/Brains/gif1.gif'
 import brains3 from '../../../media/Brains/gif2.gif'
 import brains4 from '../../../media/Brains/ficha.png'
+import gifOne from '../../../media/Brains/slider-gif1.gif'
+import gifTwo from '../../../media/Brains/slider-gif2.gif'
+import gifThree from '../../../media/Brains/slider-gif3.gif'
+import gifFour from '../../../media/Brains/slider-gif4.gif'
+import gifFive from '../../../media/Brains/slider-gif5.gif'
 import data1 from '../../../media/Data/01.png'
 import data2 from '../../../media/Data/02.gif'
 import data3 from '../../../media/Data/03.jpg'
 import data4 from '../../../media/Data/04.jpg'
 import data5 from '../../../media/Data/05.jpg'
 import data6 from '../../../media/Data/06.jpg'
-import data7 from '../../../media/Data/07.jpg'
-import data8 from '../../../media/Data/gif2.gif'
+import data7 from '../../../media/Data/07.gif'
+import data8 from '../../../media/Data/data5bg.jpg'
 import data9 from '../../../media/Data/DATA5-popup.jpg'
 import data10 from '../../../media/Data/DATA5-popup.jpg'
 import data11 from '../../../media/Data/team.jpg'
@@ -120,14 +118,19 @@ import img94 from '../../../media/Data/endgame/94.png'
 import img95 from '../../../media/Data/endgame/95.png'
 import img96 from '../../../media/Data/endgame/96.png'
 import img97 from '../../../media/Data/endgame/97.png'
+import img98 from '../../../media/Data/endgame/98.png'
+import img99 from '../../../media/Data/endgame/99.png'
+import img100 from '../../../media/Data/endgame/100.png'
+import img101 from '../../../media/Data/endgame/101.png'
+import img102 from '../../../media/Data/endgame/102.png'
 
-const imageArray = [intro1,intro2,intro3,intro4,intro5,intro6,intro7,brains1,brains2,brains3,brains4,data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,data11,CreditImage1,CreditImage2,CreditImage3,img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26,img27,img28,img29,img30,img31,img32,img33,img34,img35,img36,img37,img38,img39,img40,img41,img42,img43,img44,img45,img46,img47,img48,img49,img50,img51,img52,img53,img54,img55,img56,img57,img58,img59,img60,img61,img62,img63,img64,img65,img66,img67,img68,img69,img70,img71,img72,img73,img74,img75,img76,img77,img78,img79,img80,img81,img82,img83,img84,img85,img86,img87,img88,img89,img90,img91,img92,img93,img94,img95,img96,img97]
+const imageArray = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26,img27,img28,img29,img30,img31,img32,img33,img34,img35,img36,img37,img38,img39,img40,img41,img42,img43,img44,img45,img46,img47,img48,img49,img50,img51,img52,img53,img54,img55,img56,img57,img58,img59,img60,img61,img62,img63,img64,img65,img66,img67,img68,img69,img70,img71,img72,img73,img74,img75,img76,img77,img78,img79,img80,img81,img82,img83,img84,img85,img86,img87,img88,img89,img90,img91,img92,img93,img94,img95,img96,img97,img98,img99,img100,img101,img102,brains1,brains2,brains3,brains4,data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,data11,CreditImage1,CreditImage2,CreditImage3,gifOne,gifTwo,gifThree,gifFour,gifFive]
 
 const imagePreloader = () =>{
     imageArray.forEach(image => {
         const img = new Image();
-        img.src = image
-        console.log(img);
+        img.src = CreditImage2
+        console.log(imageArray.length)
     });
 }
 
