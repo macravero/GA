@@ -6,13 +6,19 @@
   display: flex;
   background: white;
 }
-.Reproductor.ampliado {
-  background: url('../../media/Reproductor/hackedbg.jpg');
+.Reproductor .Icons {
+  z-index: 2000;
+  width: 80px;
+  position: absolute;
 }
-.Reproductor.ampliado .critica p, .Reproductor.ampliado h2 {
+.Reproductor.ampliado {
+  background: url("../../media/Reproductor/hackedbg.jpg");
+}
+.Reproductor.ampliado .critica p,
+.Reproductor.ampliado h2 {
   color: white;
 }
-.Reproductor.ampliado h2{
+.Reproductor.ampliado h2 {
   padding-right: 3rem;
 }
 .movieContainer {
@@ -23,10 +29,10 @@
   width: 60%;
   margin-left: 6vw;
 }
-.movieContainer.hacked{
-  animation: horizontalShuffle .05s linear infinite;
+.movieContainer.hacked {
+  animation: horizontalShuffle 0.05s linear infinite;
 }
-.movieContainer.ampliada{
+.movieContainer.ampliada {
   width: 80%;
   margin-left: 3vw;
 }
@@ -38,7 +44,7 @@
   height: 100%;
 }
 .criticsContainer {
-  font-family: 'gt_america_monoregular', sans-serif;
+  font-family: "gt_america_monoregular", sans-serif;
   align-items: center;
   position: relative;
   display: flex;
@@ -47,9 +53,10 @@
   height: 100%;
   width: 25%;
   margin-left: 5%;
-  margin-right:2%;
+  margin-right: 2%;
 }
-.firstMarquee, .secondMarquee{
+.firstMarquee,
+.secondMarquee {
   height: 100%;
   position: absolute;
   -moz-transform: translateY(110%);
@@ -59,36 +66,36 @@
   -webkit-animation: criticsTransition 20s linear infinite;
   animation: criticsTransition 20s linear infinite;
 }
-.firstMarquee.hacked, .secondMarquee.hacked{
-  
+.firstMarquee.hacked,
+.secondMarquee.hacked {
   -moz-animation: criticsTransition 2s linear infinite;
   -webkit-animation: criticsTransition 2s linear infinite;
   animation: criticsTransition 2s linear infinite;
 }
-.secondMarquee{
+.secondMarquee {
   transform: translateY(200%);
   animation-delay: 10s;
 }
-.secondMarquee.hacked{
+.secondMarquee.hacked {
   animation-delay: 1s;
 }
-.firstMarquee.ampliada, .secondMarquee.ampliada{
-  
+.firstMarquee.ampliada,
+.secondMarquee.ampliada {
   -moz-animation: criticsTransition 15s linear infinite;
   -webkit-animation: criticsTransition 15s linear infinite;
   animation: criticsTransition 15s linear infinite;
 }
-.secondMarquee.ampliada{
+.secondMarquee.ampliada {
   animation-delay: 7.5s;
 }
 
-.criticsContainer div{
+.criticsContainer div {
   text-align: center;
   /* margin-left: 10%; */
   margin: 3rem 0 3rem 5%;
 }
 .criticsContainer h2 {
-  font-family: 'vcr_osd_monoregular', sans-serif;
+  font-family: "vcr_osd_monoregular", sans-serif;
   font-size: 1.6rem;
 }
 .critica p:first-child {
@@ -100,7 +107,7 @@
   margin-bottom: 2rem;
   width: 80%;
 }
-.criticaImage{
+.criticaImage {
   max-width: 100%;
 }
 .critica p:last-child {
@@ -109,7 +116,7 @@
   margin: 0;
 }
 .hackButton {
-  font-family: 'DOS', sans-serif;
+  font-family: "DOS", sans-serif;
   position: absolute;
   color: white;
   background: red;
@@ -171,11 +178,11 @@
   0% {
     width: 30%;
     margin-left: 6vw;
-    margin-top:3vw;
+    margin-top: 3vw;
   }
   100% {
     width: 75%;
-    margin-left:3vw;
-    margin-top:0;
+    margin-left: 3vw;
+    margin-top: 0;
   }
 }

@@ -1,5 +1,5 @@
 .Home {
-  background: #06070b;
+  /* background: #06070b; */
   color: white;
   height: 90vh;
   margin-top: 10vh;
@@ -63,4 +63,25 @@ img.SquareSix {
   bottom: 5vw;
   max-width: 200px;
   right: 2rem;
+}
+.Home .warning{
+  font-family: 'vcr_osd_monoregular', sans-serif;
+  position: absolute;
+  bottom: 19vw;
+  right: 28rem;
+  color: red;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.4rem;
+  max-width: 105px;
+  line-height: 100%;
+}
+.Home .warning .circle{
+  height: 25px;
+  width: 25px;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: block;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
 }

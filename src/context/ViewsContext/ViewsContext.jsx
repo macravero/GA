@@ -1,16 +1,13 @@
-import React, {createContext, useState, useContext } from 'react'
-
+import React, { createContext, useState, useContext } from "react";
 
 export const ViewsContext = createContext();
-
 
 export const useViewsContext = () => useContext(ViewsContext);
 
 const ViewsProvider = (props) => {
-
-  const [pos, setPos] = useState(1)
+  const [pos, setPos] = useState(0);
   const [homeVisited, setHomeVisited] = useState(false);
-  const [fontColor, setFontColor] = useState('white')
+  const [fontColor, setFontColor] = useState("white");
   const [movieHacked, setMovieHacked] = useState(false);
   const [ampliada, setAmpliada] = useState(false);
   return (
@@ -25,12 +22,12 @@ const ViewsProvider = (props) => {
         ampliada,
         setAmpliada,
         homeVisited,
-        setHomeVisited
+        setHomeVisited,
       }}
     >
       {props.children}
     </ViewsContext.Provider>
   );
-}
+};
 
 export default ViewsProvider;
