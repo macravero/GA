@@ -152,15 +152,17 @@ const Bot = () => {
     { user: "L45C4-N0", message: "Ingrese nombre.." },
   ]);
   const [user, setUser] = useState("UNKN0WN");
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollIntoView({ behaviour: "smooth" });
+  };
+  const messagesEndRef = useRef(null);
+  
   useEffect(() => scrollToBottom, [messageCounter]);
   useEffect(() => {
     if (messageCounter == 2) pushMessage();
   }, [messageCounter]);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current.scrollIntoView({ behaviour: "smooth" });
-  };
-  const messagesEndRef = useRef(null);
+
 
   const setUpdateMessage = ({ target }) => {
     if (messageCounter == 1 && strokeCount === 5) {

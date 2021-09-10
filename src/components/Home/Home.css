@@ -20,6 +20,7 @@ img.Lascano {
   height: 38rem;
   top: 4rem;
   margin-left: -20.4rem;
+  cursor: pointer;
 }
 img.SquareOne {
   position: absolute;
@@ -58,22 +59,29 @@ img.SquareSix {
   right: 37.5%;
   top: 16%;
 }
+img.warningMessage {
+  position: absolute;
+  max-width: 46rem;
+  right: 37%;
+  top: 22%;
+}
 .Home img.Logo {
   position: absolute;
   bottom: 5vw;
   max-width: 200px;
   right: 2rem;
 }
+
 .Home .warning{
   font-family: 'vcr_osd_monoregular', sans-serif;
   position: absolute;
-  bottom: 19vw;
-  right: 28rem;
+  bottom: 45%;
+  right: 18%;
   color: red;
   text-align: left;
   font-weight: 400;
   font-size: 1.4rem;
-  max-width: 105px;
+  max-width: 125px;
   line-height: 100%;
 }
 .Home .warning .circle{
@@ -84,4 +92,11 @@ img.SquareSix {
   display: block;
   margin-left: 1.5rem;
   margin-bottom: 1rem;
+}
+.Home .lascanoArea{
+  position: absolute;
+  width: 35%;
+  height: 70%;
+  left: 31%;
+  cursor: pointer;
 }

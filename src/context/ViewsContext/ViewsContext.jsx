@@ -10,6 +10,7 @@ const ViewsProvider = (props) => {
   const [fontColor, setFontColor] = useState("white");
   const [movieHacked, setMovieHacked] = useState(false);
   const [ampliada, setAmpliada] = useState(false);
+  const [viewBackground, setViewBackground] = useState('#06070b')
   return (
     <ViewsContext.Provider
       value={{
@@ -23,6 +24,8 @@ const ViewsProvider = (props) => {
         setAmpliada,
         homeVisited,
         setHomeVisited,
+        viewBackground,
+        setViewBackground
       }}
     >
       {props.children}

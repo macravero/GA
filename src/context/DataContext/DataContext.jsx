@@ -31,7 +31,7 @@ const DataProvider = (props) => {
         DMbackground,
         setDMbackground,
         cursor,
-        setCursor
+        setCursor,
       }}
     >
       {props.children}
