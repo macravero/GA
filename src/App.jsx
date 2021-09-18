@@ -4,6 +4,7 @@ import Intro from "./components/Intro/Intro";
 import Footer from "./components/Footer/Footer";
 import Bot from "./components/Bot/Bot";
 import ViewsProvider from "./context/ViewsContext/ViewsContext";
+import HomeHackProvider from "./context/HomeHackContext/HomeHackContext";
 
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -14,11 +15,13 @@ const App = () => {
   return (
     <div className="App">
       <ViewsProvider>
+        <HomeHackProvider>
         {counter < 5 && <Intro counter={counter} setCounter={setCounter} />}
         {counter >= 5 && <Navbar />}
         {counter >= 5 && <View />}
         {counter >= 5 && <Footer />}
         {counter >= 5 && <Bot />}
+        </HomeHackProvider>
       </ViewsProvider>
     </div>
   );

@@ -10,6 +10,8 @@ import SquareFour from '../../media/Home/sq4.jpg'
 import SquareFive from '../../media/Home/sq5.jpg'
 import SquareSix from '../../media/Home/sq6.jpg'
 import Logo from '../../media/Home/logo_mecenazgo.png'
+
+import {useHomeHackContext} from '../../context/HomeHackContext/HomeHackContext'
 //hack 1
 import Warning from '../../media/Home/advertencia.PNG'
 import Hack1BG from '../../media/Home/hack_1_bg.jpg'
@@ -39,11 +41,8 @@ import Hack12BG from '../../media/Home/hack_12_bg.jpg';
 function Home({visited, setVisited, updateOverlayGif}) {
 
   //state
-  const [textContent, setTextContent] = useState('POR FAVOR, NO CLICKEE AQUÍ')
-  const [currentHackState, setCurrentHackState] = useState(0)
-  const [currentMessage, setCurrentMessage] = useState({img:Warning, display: true})
+  const {textContent, setTextContent,currentHackState, setCurrentHackState, currentMessage, setCurrentMessage, isClickable, setIsClickable} = useHomeHackContext()
   const [finishedLoading, setFinishedLoading] = useState(false)
-  const [isClickable, setIsClickable] = useState(false)
   const { setViewBackground } = useViewsContext();
   //animations
   const pinkAnimation = useSpring(!visited && { opacity: 1, from: { opacity: 0 }, delay: 500 })
@@ -167,7 +166,7 @@ function Home({visited, setVisited, updateOverlayGif}) {
   return (
     <div className='Home'>
       <animated.div style={currentHackState===0 ? pinkAnimation : {display: 'none'}} className="Square"></animated.div>
-      <animated.img style={currentHackState===0 ? lascanoAnimation : {display: 'none'}} src={Lascano} onClick={updateHackStatus} className="Lascano" alt="" />
+      <animated.img style={currentHackState===0 ? lascanoAnimation : {display: 'none'}} src={Lascano} className="Lascano" alt="" />
       <animated.img style={currentHackState===0 ? sq1Animation : {display: 'none'}} src={SquareOne} className='SquareOne' alt="" />
       <animated.img style={currentHackState===0 ? sq2Animation : {display: 'none'}} src={SquareTwo} className='SquareTwo' alt="" />
       <animated.img style={currentHackState===0 ? sq3Animation : {display: 'none'}} src={SquareThree} className='SquareThree' alt="" />

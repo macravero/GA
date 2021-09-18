@@ -1,5 +1,4 @@
 import React, {createContext, useState, useContext } from 'react'
-// import CreditImage3 from '../media/Data/11.png'
 
 
 export const DataContext = createContext();

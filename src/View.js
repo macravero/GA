@@ -41,7 +41,7 @@ const View = props => {
   return (
     <DataProvider>
       <img src={overlayStatus.gif} className="overlayGif" style={{display: overlayStatus.shows ? 'block' : 'none'}}/>
-      <div className="View" style={{background: viewBackground}}>
+      <div className="View" style={{backgroundImage: viewBackground, backgroundSize: 'cover'}}>
         {updateView(pos)}
       </div>
     </DataProvider>

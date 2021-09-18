@@ -142,7 +142,11 @@ function Data() {
           <div className="DataThree">
             <p className="proyeccion">BAFICI</p>
             <p className="proyeccion">
-              MALBA (Museo de Arte Latinoamericano) Palais de Glace
+              MALBA (Museo de Arte Latinoamericano)
+              <br />
+            </p>
+            <p className="proyeccion">
+              Palais de Glace
               <br />
             </p>
             <p className="proyeccion">

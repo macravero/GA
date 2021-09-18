@@ -4,3 +4,7 @@ img.overlayGif {
     height: 100vh;
     z-index: 100;
   }
+.View{
+  background-size: cover;
+
+}
