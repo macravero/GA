@@ -1,25 +1,25 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from "react";
-import { useSpring, animated } from "react-spring";
-import playSound from "../shared/playSound";
-import img01 from "../../media/Brains/blackhole.gif";
-import img02 from "../../media/Data/02.gif";
-import img03 from "../../media/Data/03.jpg";
-import img04 from "../../media/Data/04.jpg";
-import img05 from "../../media/Data/05.jpg";
-import img06 from "../../media/Data/06.jpg";
-import img07 from "../../media/Data/07.gif";
-import "./Data.css";
-import Credits from "./Credits/Credits";
-import CreditImages from "./Credits/CreditImages";
-import Critics from "./Critics/Critics";
-import Backend from "./Backend/Backend";
-import Endgame from "./Endgame/Endgame";
-import Header from "./Header/Header";
-import Darkmode from "./Darkmode/Darkmode";
-import { useDataContext } from "../../context/DataContext/DataContext";
-import DarkModeSound from "../../media/sounds/setDarkMode.wav";
-import clickOptionSound from "../../media/sounds/chooseDataOptions.wav";
+import React, { useState, useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
+import playSound from '../shared/playSound';
+import img01 from '../../media/Data/08.jpg';
+import img02 from '../../media/Data/02.gif';
+import img03 from '../../media/Data/03.jpg';
+import img04 from '../../media/Data/04.jpg';
+import img05 from '../../media/Data/05.jpg';
+import img06 from '../../media/Data/06.jpg';
+import img07 from '../../media/Data/07.gif';
+import './Data.css';
+import Credits from './Credits/Credits';
+import CreditImages from './Credits/CreditImages';
+import Critics from './Critics/Critics';
+import Backend from './Backend/Backend';
+import Endgame from './Endgame/Endgame';
+import Header from './Header/Header';
+import Darkmode from './Darkmode/Darkmode';
+import { useDataContext } from '../../context/DataContext/DataContext';
+import DarkModeSound from '../../media/sounds/setDarkMode.wav';
+import clickOptionSound from '../../media/sounds/chooseDataOptions.wav';
 
 function Data() {
   const buttonAnimation = useSpring({
@@ -101,18 +101,18 @@ function Data() {
     switch (dataSelected) {
       default:
         return (
-          <div className="DataIntro">
+          <div className='DataIntro'>
             <p>
               <strong>_Generación artiﬁcial</strong> es un proyecto transmedia
               conformado por una película, una performance audiovisual con redes
-              neuronales y un juego de realidad alternada que comienza con esta
-              web.
+              neuronales y este site interactivo con el videojuego
+              “Videorrealidad”.
             </p>
           </div>
         );
       case 1:
         return (
-          <div className="DataOne">
+          <div className='DataOne'>
             <p>
               <strong>_Generación Artificial</strong> es una mirada subjetiva
               sobre la historia de los Video Jockeys, con un énfasis nostálgico
@@ -139,151 +139,160 @@ function Data() {
         );
       case 3:
         return (
-          <div className="DataThree">
-            <p className="proyeccion">BAFICI</p>
-            <p className="proyeccion">
+          <div className='DataThree'>
+            <p className='proyeccion'>BAFICI</p>
+            <p className='proyeccion'>
               MALBA (Museo de Arte Latinoamericano)
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Palais de Glace
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Centro Cultural Recoleta
               <br />
             </p>
-            <p className="proyeccion">
-              {" "}
+            <p className='proyeccion'>
+              {' '}
               Museo del Cine
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Festival de cine de la Habana
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Festifreak
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               BAFICI Mendoza
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               BAFICI Rosario
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Marfici
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Museo MAR
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               FECILBBA
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Centro Cultural de la Ciencia
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Play, Semana de Videoarte
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               FIVA
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Biblioteca Nacional
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Es Baluard Museu d'Art Modern i Contemporani de Palma (España)
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Dulces Trópicos (Perú)
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Filmoteca de Andalucía
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               La Casa Encendida (Madrid)
               <br />
             </p>
-            <p className="proyeccion">
-              {" "}
+            <p className='proyeccion'>
+              {' '}
               Harinera (Zaragoza)
               <br />
             </p>
-            <p className="proyeccion">
-              Centro Cultural de España (Chile) Zumzeig (Barcelona)
+            <p className='proyeccion'>
+              Centro Cultural de España (Chile)
               <br />
             </p>
-            <p className="proyeccion">
-              {" "}
+            <p className='proyeccion'>
+              {' '}
+              Zumzeig (Barcelona)
+              <br />
+            </p>
+            <p className='proyeccion'>
+              {' '}
               Márgenes
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Pirámide
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Cinemateca Uruguaya
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               La Casa del Cine (México DF)
               <br />
             </p>
-            <p className="proyeccion">
-              Centro de Cultura Digital (México DF Festival Lumínica
+            <p className='proyeccion'>
+              Centro de Cultura Digital (México DF)
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
+              Festival Lumínica
+              <br />
+            </p>
+            <p className='proyeccion'>
               Lateinamerikanische Tage (Leipzig, Alemania)
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Festival Piriápolis de película (Uruguay)
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Club Cultural Matienzo
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Comunidad Contempo
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Zona Futuro
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Casa Yakuzi
               <br />
             </p>
-            <p className="proyeccion">
+            <p className='proyeccion'>
               Congreso Futuro (Chile)
               <br />
             </p>
-            <p className="proyeccion">Festival de la Imagen (Colombia)</p>
+            <p className='proyeccion'>Festival de la Imagen (Colombia)</p>
           </div>
         );
       case 4:
         return <Critics></Critics>;
       case 5:
         return (
-          <div className="DataFive">
+          <div className='DataFive'>
             <p>
               <strong>_El Brain’s Cut</strong> de Generación Artificial es una
               experiencia audiovisual única que explora el contacto entre cine,
@@ -297,7 +306,7 @@ function Data() {
               Una creación Kerlleñevich, Riera & Pintos
             </p>
             {!hideTeam && (
-              <div className="teamText">
+              <div className='teamText'>
                 <p>
                   Dirección: Federico Pintos
                   <br /> Programación: Pablo Riera & Mathias Gatti <br />
@@ -313,92 +322,92 @@ function Data() {
               </div>
             )}
             {!hideTeamImage && (
-              <div className="teamImage">
+              <div className='teamImage'>
                 <span
-                  className="closeTeamImage"
+                  className='closeTeamImage'
                   onClick={() => setHideTeamImage(true)}
                 >
                   [ x ]
                 </span>
                 <a
-                  href="https://www.instagram.com/javierplano_videonix/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Javier Plano"
+                  href='https://www.instagram.com/javierplano_videonix/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Javier Plano'
                 >
-                  <span className="javier link"></span>
+                  <span className='javier link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/elianitable/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Eliana Rosales"
+                  href='https://www.instagram.com/elianitable/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Eliana Rosales'
                 >
-                  <span className="eliana  link"></span>
+                  <span className='eliana  link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/kev.zog/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Kevin Herzog"
+                  href='https://www.instagram.com/kev.zog/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Kevin Herzog'
                 >
-                  <span className="kevin  link"></span>
+                  <span className='kevin  link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/mathigatti/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Mathias Gatti"
+                  href='https://www.instagram.com/mathigatti/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Mathias Gatti'
                 >
-                  <span className="mathias  link"></span>
+                  <span className='mathias  link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/rierayriase/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Pablo Riera"
+                  href='https://www.instagram.com/rierayriase/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Pablo Riera'
                 >
-                  <span className="pablo  link"></span>
+                  <span className='pablo  link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/val.leonardo/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Leonardo Val"
+                  href='https://www.instagram.com/val.leonardo/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Leonardo Val'
                 >
-                  <span className="leonardo  link"></span>
+                  <span className='leonardo  link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/mateoamaral/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Mateo Amaral"
+                  href='https://www.instagram.com/mateoamaral/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Mateo Amaral'
                 >
-                  <span className="mateo  link"></span>
+                  <span className='mateo  link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/hernan.kerllenevich/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Hernán Kerlleñevich"
+                  href='https://www.instagram.com/hernan.kerllenevich/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Hernán Kerlleñevich'
                 >
-                  <span className="hernan  link"></span>
+                  <span className='hernan  link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/rico_pintos/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Federico Pintos"
+                  href='https://www.instagram.com/rico_pintos/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Federico Pintos'
                 >
-                  <span className="federico  link"></span>
+                  <span className='federico  link'></span>
                 </a>
                 <a
-                  href="https://www.instagram.com/urmanjulian/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Julián Urman"
+                  href='https://www.instagram.com/urmanjulian/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Julián Urman'
                 >
-                  <span className="julian  link"></span>
+                  <span className='julian  link'></span>
                 </a>
               </div>
             )}
@@ -418,57 +427,60 @@ function Data() {
   const setDataBackground = () => {
     switch (dataSelected) {
       default:
-        return "Data";
+        return 'Data';
       case 2:
-        return "Data GreenBG";
+        return 'Data GreenBG';
       case 3:
-        return "Data BlueBG";
+        return 'Data BlueBG';
       case 5:
-        return "Data BrainsBG";
+        return 'Data BrainsBG';
       case 6:
-        return "Data BlueBG";
+        return 'Data BlueBG';
     }
   };
   const setHackedBg = () => {
     if (isDarkMode) {
-      if (DMbackground === "lascano") {
-        return "LascanoBg";
+      if (DMbackground === 'lascano') {
+        return 'LascanoBg';
       }
-      if (DMbackground === "pintos") {
-        return "PintosBg";
+      if (DMbackground === 'pintos') {
+        return 'PintosBg';
       }
-      return "";
+      if (DMbackground === 'lab') {
+        return 'labBg';
+      }
+      return '';
     }
   };
   const setHackedCursor = () => {
     if (isDarkMode) {
-      if (cursor === "clickme") {
-        return "clickMeCursor";
+      if (cursor === 'clickme') {
+        return 'clickMeCursor';
       }
-      if (cursor === "flipped") {
-        return "flippedCursor";
+      if (cursor === 'flipped') {
+        return 'flippedCursor';
       }
-      return "";
+      return '';
     }
   };
   const setHackedFontFamily = () => {
     if (isDarkMode) {
-      if (fontFamily === "DOS") {
-        return "DOSfont";
+      if (fontFamily === 'DOS') {
+        return 'DOSfont';
       }
-      if (fontFamily === "GT") {
-        return "GTfont";
+      if (fontFamily === 'GT') {
+        return 'GTfont';
       }
     }
     return;
   };
   const setHackedFontColor = () => {
     if (isDarkMode) {
-      if (fontColor === "blood") {
-        return "BloodColor";
+      if (fontColor === 'blood') {
+        return 'BloodColor';
       }
-      if (fontColor === "dead") {
-        return "DeadColor";
+      if (fontColor === 'dead') {
+        return 'DeadColor';
       }
       return;
     }
@@ -478,162 +490,162 @@ function Data() {
       className={`${setDataBackground()} ${setHackedCursor()} ${setHackedBg()} ${setHackedFontFamily()} ${setHackedFontColor()}`}
     >
       <Header />
-      <div className="leftContainer">
-        <h1 className="dataTitle">
+      <div className='leftContainer'>
+        <h1 className='dataTitle'>
           Data<sup>(3)</sup>
         </h1>
-        <div className="linksContainer">
+        <div className='linksContainer'>
           <ul>
             <li
-              className={dataSelected === 1 && "active"}
+              className={dataSelected === 1 && 'active'}
               onClick={() => {
                 SetDataSelected(1);
                 playSound(clickOptionSound);
               }}
             >
-              <span className="numeration">1</span>La Película
+              <span className='numeration'>1</span>La Película
             </li>
             <li
-              className={dataSelected === 2 && "active"}
+              className={dataSelected === 2 && 'active'}
               onClick={() => {
                 SetDataSelected(2);
                 playSound(clickOptionSound);
               }}
             >
-              <span className="numeration">2</span>Créditos
+              <span className='numeration'>2</span>Créditos
             </li>
             <li
-              className={dataSelected === 3 && "active"}
+              className={dataSelected === 3 && 'active'}
               onClick={() => {
                 SetDataSelected(3);
                 playSound(clickOptionSound);
               }}
             >
-              <span className="numeration">3</span>Proyecciones
+              <span className='numeration'>3</span>Proyecciones
             </li>
             <li
-              className={dataSelected === 4 && "active"}
+              className={dataSelected === 4 && 'active'}
               onClick={() => {
                 SetDataSelected(4);
                 playSound(clickOptionSound);
               }}
             >
-              <span className="numeration">4</span>Criticas
+              <span className='numeration'>4</span>Criticas
             </li>
             {darkMode && (
               <animated.li
                 style={buttonAnimation}
                 onClick={activateDarkMode}
-                id="darkMode"
+                id='darkMode'
               >
-                <span className="numeration">0</span>Dark Mode
+                <span className='numeration'>0</span>Dark Mode
               </animated.li>
             )}
           </ul>
           <ul>
             <li
-              className={dataSelected === 5 && "active"}
+              className={dataSelected === 5 && 'active'}
               onClick={() => {
                 SetDataSelected(5);
                 playSound(clickOptionSound);
               }}
             >
-              <span className="numeration">5</span>Brain's Cut
+              <span className='numeration'>5</span>Brain's Cut
             </li>
             <li
-              className={dataSelected === 6 && "active"}
+              className={dataSelected === 6 && 'active'}
               onClick={() => {
                 SetDataSelected(6);
                 playSound(clickOptionSound);
               }}
             >
-              <span className="numeration">6</span>El Equipo
+              <span className='numeration'>6</span>El Equipo
             </li>
             <li
-              className={dataSelected === 7 && "active"}
+              className={dataSelected === 7 && 'active'}
               onClick={() => {
                 SetDataSelected(7);
                 playSound(clickOptionSound);
               }}
             >
-              <span className="numeration">7</span>Última Fase
+              <span className='numeration'>7</span>Última Fase
             </li>
           </ul>
         </div>
       </div>
-      <div className="rightContainer">
+      <div className='rightContainer'>
         {showDataItem()}
         {dataSelected === 1 && (
           <div>
             <animated.div
               style={item1Animation}
-              className={"item itemTwo " + (hideItemTwo && "hidden")}
+              className={'item itemTwo ' + (hideItemTwo && 'hidden')}
             >
               <div
-                className="closeLink"
+                className='closeLink'
                 onClick={() => SetHideItemTwo(true)}
               ></div>
-              <img src={img02} alt="Clouds" />
+              <img src={img02} alt='Clouds' />
             </animated.div>
             <animated.div
               style={item2Animation}
-              className={"item itemThree " + (hideItemThree && "hidden")}
+              className={'item itemThree ' + (hideItemThree && 'hidden')}
             >
               <div
-                className="closeLink"
+                className='closeLink'
                 onClick={() => SetHideItemThree(true)}
               ></div>
-              <img src={img03} alt="Thunder" />
+              <img src={img03} alt='Thunder' />
             </animated.div>
             <animated.div
               style={item3Animation}
-              className={"item itemFour " + (hideItemFour && "hidden")}
+              className={'item itemFour ' + (hideItemFour && 'hidden')}
             >
               <div
-                className="closeLink"
+                className='closeLink'
                 onClick={() => SetHideItemFour(true)}
               ></div>
-              <img src={img04} alt="Balloons" />
+              <img src={img04} alt='Balloons' />
             </animated.div>
             <animated.div
               style={item4Animation}
-              className={"item itemFive " + (hideItemFive && "hidden")}
+              className={'item itemFive ' + (hideItemFive && 'hidden')}
             >
               <div
-                className="closeLink"
+                className='closeLink'
                 onClick={() => SetHideItemFive(true)}
               ></div>
-              <img src={img05} alt="Palms" />
+              <img src={img05} alt='Palms' />
             </animated.div>
             <animated.div
               style={item5Animation}
-              className={"item itemSix " + (hideItemSix && "hidden")}
+              className={'item itemSix ' + (hideItemSix && 'hidden')}
             >
               <div
-                className="closeLink"
+                className='closeLink'
                 onClick={() => SetHideItemSix(true)}
               ></div>
-              <img src={img06} alt="Sea Worlds" />
+              <img src={img06} alt='Sea Worlds' />
             </animated.div>
             <animated.div
               style={item6Animation}
-              className={"item itemSeven " + (hideItemSeven && "hidden")}
+              className={'item itemSeven ' + (hideItemSeven && 'hidden')}
             >
               <div
-                className="closeLink"
+                className='closeLink'
                 onClick={() => SetHideItemSeven(true)}
               ></div>
-              <img src={img07} alt="Flower" />
+              <img src={img07} alt='Flower' />
             </animated.div>
             <animated.div
               style={item7Animation}
-              className={"item itemOne " + (hideItemOne && "hidden")}
+              className={'item itemOne ' + (hideItemOne && 'hidden')}
             >
               <div
-                className="closeLink"
+                className='closeLink'
                 onClick={() => SetHideItemOne(true)}
               ></div>
-              <img src={img01} alt="Clouds" />
+              <img src={img01} alt='Clouds' />
             </animated.div>
           </div>
         )}

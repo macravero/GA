@@ -1,441 +1,445 @@
 .Data {
-    overflow: hidden;
-    height: 90vh;
-    position: relative;
-    padding-top: 10vh;
-    display: flex;
-    padding-left: 5%;
+  overflow: hidden;
+  height: 90vh;
+  position: relative;
+  padding-top: 10vh;
+  display: flex;
+  padding-left: 5%;
 }
 
 .Data.GreenBG {
-    background: #00ff00;
+  background: #00ff00;
 }
 
 .Data.BlueBG {
-    background: #0000ff;
+  background: #0000ff;
 }
 
 .Data.BrainsBG {
-    background: url('../../media/Data/data5bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url('../../media/Data/data5bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .Data.TeamBG {
-    background: url('../../media/Data/DATA5-popup.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url('../../media/Data/DATA5-popup.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .Data .leftContainer {
-    width: 45%;
-    z-index: 1;
+  width: 45%;
+  z-index: 1;
 }
 
 .Data .rightContainer {
-    width: 50%;
+  width: 50%;
 }
 
 .Data h1 {
-    font-family: 'gt_america_monothin', sans-serif;
-    color: white;
-    font-size: 15rem;
-    margin: 0;
-    padding-top: 5vh;
+  font-family: 'gt_america_monothin', sans-serif;
+  color: white;
+  font-size: 15rem;
+  margin: 0;
+  padding-top: 5vh;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .Data .linksContainer {
-    display: flex;
+  display: flex;
 }
 
 .Data ul {
-    color: white;
-    font-family: 'gt_america_monoregular', sans-serif;
-    font-size: 2.6rem;
-    text-align: left;
+  color: white;
+  font-family: 'gt_america_monoregular', sans-serif;
+  font-size: 2.6rem;
+  text-align: left;
 }
 
 .Data ul li:hover,
 .Data ul li.active {
-    transform: translateX(2rem);
-    cursor: pointer;
+  transform: translateX(2rem);
+  cursor: pointer;
 }
 
 .Data ul li#darkMode {
-    margin-top: 6rem;
-    animation: infiniteDarkmodeButton 4000ms infinite;
-    transition: all 2s;
+  margin-top: 6rem;
+  animation: infiniteDarkmodeButton 4000ms infinite;
+  transition: all 2s;
 }
 
 .Data .numeration {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .DataIntro {
-    border: 1px solid white;
-    position: relative;
-    height: 75vh;
-    width: 100%;
-    color: white;
+  border: 1px solid white;
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  color: white;
 }
 
 .DataIntro p {
-    position: absolute;
-    width: 55%;
-    text-align: left;
-    left: 50%;
-    margin-left: -18rem;
-    top: 35%;
-    font-family: 'gt_america_monoregular', sans-serif;
+  position: absolute;
+  width: 55%;
+  text-align: left;
+  left: 50%;
+  margin-left: -18rem;
+  top: 35%;
+  font-family: 'gt_america_monoregular', sans-serif;
 }
 
 .DataOne {
-    position: relative;
-    height: 75vh;
-    width: 90%;
-    color: white;
+  position: relative;
+  height: 75vh;
+  width: 90%;
+  color: white;
 }
 
 .DataOne p {
-    position: absolute;
-    width: 60%;
-    text-align: left;
-    left: 50%;
-    margin-left: -18rem;
-    top: 25%;
-    font-family: 'gt_america_monoregular', sans-serif;
+  position: absolute;
+  width: 60%;
+  text-align: left;
+  left: 50%;
+  margin-left: -18rem;
+  top: 25%;
+  font-family: 'gt_america_monoregular', sans-serif;
 }
 
 .item {
-    position: absolute;
-    display: block;
-    height: auto;
-    width: 100%;
-    max-width: 20rem;
-    border: 2px dashed white;
+  position: absolute;
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 20rem;
+  border: 2px dashed white;
 }
 
 .closeLink {
-    height: 0;
-    width: 100%;
-    position: relative;
+  height: 0;
+  width: 100%;
+  position: relative;
 }
 
 .item img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
 }
 
 .closeLink:before {
-    content: '[ X ]';
-    color: white;
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    z-index: 10;
-    font-size: 1rem;
-    cursor: pointer;
-    font-family: 'DOS', sans-serif;
+  content: '[ X ]';
+  color: white;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  z-index: 10;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'DOS', sans-serif;
 }
 
 .item.itemOne {
-    top: 30vh;
-    right: 37vw;
+  top: 30vh;
+  right: 37vw;
 }
 
 .item.itemTwo {
-    right: 10vw;
-    bottom: 17vh;
+  right: 10vw;
+  bottom: 17vh;
 }
 
 .item.itemThree {
-    top: 20vh;
-    right: 20vw;
+  top: 20vh;
+  right: 20vw;
 }
 
 .item.itemFour {
-    left: 10vw;
-    top: 4vh;
+  left: 10vw;
+  top: 4vh;
 }
 
 .item.itemFive {
-    left: 34vw;
-    bottom: 35vh;
+  left: 34vw;
+  bottom: 35vh;
 }
 
 .item.itemSix {
-    left: 40%;
-    max-width: 32rem;
-    bottom: 10vh;
+  left: 40%;
+  max-width: 32rem;
+  bottom: 10vh;
 }
 
 .item.itemSeven {
-    top: 63vh;
-    left: 17vw;
+  top: 63vh;
+  left: 17vw;
 }
 
 .item.hidden {
-    display: none;
+  display: none;
 }
 .DataThree {
-    margin-top: 25%;
-    margin-left: 10%;
-    text-align: left;
+  margin-top: 25%;
+  margin-left: 10%;
+  text-align: left;
 }
 
 .DataThree p {
-    margin: -1rem 0;
-    font-weight: bold;
-    transition: all 0.2s;
-    color: white;
-    height: 100%;
+  margin: -1rem 0;
+  font-weight: bold;
+  transition: all 0.2s;
+  color: white;
+  height: 100%;
 }
 
 .DataThree p:hover {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .DataFive {
-    background: url('../../media/Data/DATA5-popup.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    position: absolute;
-    left: 32vw;
-    width: 60vw;
-    height: 70vh;
-    top: 17vh;
-    display: flex;
-    text-align: left;
+  background: url('../../media/Data/DATA5-popup.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  position: absolute;
+  left: 32vw;
+  width: 60vw;
+  height: 70vh;
+  top: 17vh;
+  display: flex;
+  text-align: left;
 }
 
 .DataFive p {
-    padding-left: 47%;
-    padding-right: 8%;
-    padding-top: 10%;
-    font-family: 'gt_america_monoregular', sans-serif;
+  padding-left: 47%;
+  padding-right: 8%;
+  padding-top: 10%;
+  font-family: 'gt_america_monoregular', sans-serif;
 }
 
 .teamImage {
-    background: url('../../media/Data/team.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 34vw;
-    height: 36vh;
-    position: absolute;
-    border: 2px dashed white;
-    right: -4vw;
-    top: 37vh;
+  background: url('../../media/Data/team.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 34vw;
+  height: 36vh;
+  position: absolute;
+  border: 2px dashed white;
+  right: -4vw;
+  top: 37vh;
 }
-.teamImage .closeTeamImage{
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: white;
-    cursor: pointer;
+.teamImage .closeTeamImage {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  cursor: pointer;
 }
 
 .teamText {
-    background: #0000ff;
-    color: white;
-    position: absolute;
-    left: 8vw;
-    width: 18rem;
-    padding-right: 5rem;
-    padding-left: 2rem;
-    text-align: left;
-    top: 7vh;
-    z-index: 2;
+  background: #0000ff;
+  color: white;
+  position: absolute;
+  left: 8vw;
+  width: 18rem;
+  padding-right: 5rem;
+  padding-left: 2rem;
+  text-align: left;
+  top: 7vh;
+  z-index: 2;
 }
-.teamText p{
-    padding: 0;
-    font-size: 1.6rem;
+.teamText p {
+  padding: 0;
+  font-size: 1.6rem;
 }
-.teamText span{
-    position: absolute;
-    cursor: pointer;
-    top: 1rem;
-    right: 1rem;
+.teamText span {
+  position: absolute;
+  cursor: pointer;
+  top: 1rem;
+  right: 1rem;
 }
 
 @keyframes infiniteDarkmodeButton {
-    from {
-        color: white;
-    }
-    16.66% {
-        color: black;
-    }
-    33.33% {
-        color: red;
-    }
-    50% {
-        color: black;
-    }
-    66.66% {
-        color: #0000ff
-    }
-    83.33% {
-      color: black;
-    }
-    to {
-        color: white;
-    }
+  from {
+    color: white;
   }
+  16.66% {
+    color: black;
+  }
+  33.33% {
+    color: red;
+  }
+  50% {
+    color: black;
+  }
+  66.66% {
+    color: #0000ff;
+  }
+  83.33% {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
 
-  /* ESTOS SON LOS LINKS */
-  .javier {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: none;
-    position: absolute;
-    top: 17vh;
-    left: 6vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .eliana {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: none;
-    position: absolute;
-    top: 18.2vh;
-    left: 8.7vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .kevin {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: none;
-    position: absolute;
-    top: 17vh;
-    left: 10.7vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .mathias {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: none;
-    position: absolute;
-    top: 16vh;
-    left: 12.9vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .pablo {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: none;
-    position: absolute;
-    top: 17vh;
-    left: 14.7vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .leonardo {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: none;
-    position: absolute;
-    top: 16vh;
-    right: 16vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .mateo {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: none;
-    position: absolute;
-    top: 17vh;
-    right: 13vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .hernan {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: transparent;
-    position: absolute;
-    top: 16.8vh;
-    right: 10.5vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .federico {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: transparent;
-    position: absolute;
-    top: 16vh;
-    right: 7.7vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-  .julian {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: transparent;
-    position: absolute;
-    top: 15vh;
-    right: 5.2vw;
-    border-radius: 50%;
-    border: 1px solid white;
-  }
+/* ESTOS SON LOS LINKS */
+.javier {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  position: absolute;
+  top: 17vh;
+  left: 6vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.eliana {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  position: absolute;
+  top: 18.2vh;
+  left: 8.7vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.kevin {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  position: absolute;
+  top: 17vh;
+  left: 10.7vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.mathias {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  position: absolute;
+  top: 16vh;
+  left: 12.9vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.pablo {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  position: absolute;
+  top: 17vh;
+  left: 14.7vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.leonardo {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  position: absolute;
+  top: 16vh;
+  right: 16vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.mateo {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  position: absolute;
+  top: 17vh;
+  right: 13vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.hernan {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  position: absolute;
+  top: 16.8vh;
+  right: 10.5vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.federico {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  position: absolute;
+  top: 16vh;
+  right: 7.7vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.julian {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  position: absolute;
+  top: 15vh;
+  right: 5.2vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
 
-  .link:hover{
-      background:white;
-      cursor: pointer;
-  }
+.link:hover {
+  background: white;
+  cursor: pointer;
+}
 
-  /* hacks */
+/* hacks */
 
-  .Data.PintosBg{
-      background: url('../../media/Brains/slider-gif3.gif') no-repeat;
-      background-size: cover;
-  }
-  .Data.LascanoBg{
-      background: url('../../media/Data/10.png') no-repeat;
-      background-size: cover;
-  }
-  .Data.clickMeCursor{
-      cursor: not-allowed;
-  }
-  .Data.flippedCursor{
-      cursor: all-scroll;
-  }
-  .Data.DOSfont h1{
-      font-family: 'DOS', sans-serif;
-  }
-  .Data.DOSfont ul{  
-      font-family: 'DOS', sans-serif;
-  }
-  .Data.GTfont h1{
-    font-family: 'Lobster', cursive;
-  }
-  .Data.GTfont ul{
-    font-family: 'Lobster', cursive;
-  }
-  .Data.BloodColor h1{
-      color: red;
-  }
-  .Data.BloodColor ul{
-      color:red;
-  }
-  .Data.DeadColor h1{
-      color: black;
-  }
-  .Data.DeadColor ul{
-      color:black;
-  }
+.Data.PintosBg {
+  background: url('../../media/Brains/slider-gif3.gif') no-repeat;
+  background-size: cover;
+}
+.Data.LascanoBg {
+  background: url('../../media/Data/10.png') no-repeat;
+  background-size: cover;
+}
+.Data.labBg {
+  background: url('../../media/Data/12.jpg') no-repeat;
+  background-size: cover;
+}
+.Data.clickMeCursor {
+  cursor: not-allowed;
+}
+.Data.flippedCursor {
+  cursor: all-scroll;
+}
+.Data.DOSfont h1 {
+  font-family: 'DOS', sans-serif;
+}
+.Data.DOSfont ul {
+  font-family: 'DOS', sans-serif;
+}
+.Data.GTfont h1 {
+  font-family: 'Lobster', cursive;
+}
+.Data.GTfont ul {
+  font-family: 'Lobster', cursive;
+}
+.Data.BloodColor h1 {
+  color: red;
+}
+.Data.BloodColor ul {
+  color: red;
+}
+.Data.DeadColor h1 {
+  color: black;
+}
+.Data.DeadColor ul {
+  color: black;
+}
